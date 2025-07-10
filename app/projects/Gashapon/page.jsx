@@ -1,3 +1,5 @@
+import styles from './GashaponPage.module.css';
+
 export default function GashaponPage() {
     return (
       <main className="main-content">

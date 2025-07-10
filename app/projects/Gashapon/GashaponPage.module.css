@@ -1,0 +1,12 @@
+/* GashaponPage.module.css */
+.heading {
+  color: #000000;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.videoWrapper {
+  border: 4px dashed #000000;
+  padding: 1rem;
+  background-color: #ffffff;
+}

@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[113],{3259:function(e,n,_){Promise.resolve().then(_.t.bind(_,8692,23))},8692:function(e){e.exports={heading:"GashaponPage_heading__RJ_gN",videoWrapper:"GashaponPage_videoWrapper__bJ4lr"}}},function(e){e.O(0,[971,472,744],function(){return e(e.s=3259)}),_N_E=e.O()}]);
