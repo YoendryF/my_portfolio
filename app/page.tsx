@@ -170,7 +170,7 @@ export default function Home() {
       {
         title: "SHPE 2024 Conference",
         role: "Participant",
-        image: "/Region7.jpg",
+        image: "/Region7.JPG",
         desc: "Engaged in professional development through business networking events, hospitality suites, and the national career fair. Gained insight into industry trends, connected with recruiters from leading tech companies, and expanded my network within the STEM and Hispanic engineering communities.",
         link: "https://www.shpe.org/events/national-convention"
       },
@@ -280,7 +280,7 @@ export default function Home() {
       },
       {
         title: "Christelle.com",
-        image: "/Christelle.JPG",
+        image: "/ChristellePhotography.PNG",
         desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
         link: "https://Christellephotography.com"
       },
