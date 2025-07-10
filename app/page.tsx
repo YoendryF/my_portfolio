@@ -13,7 +13,7 @@ export default function Home() {
           <h2>Yoendry Ferro Santizo</h2>
           <div className="profile-img-wrapper">
             <Image
-              src="/my-portfolio/photo1.jpg"
+              src="/photo1.jpg"
               alt="Yoendry's Photo"
               width={100}
               height={100}
@@ -33,9 +33,8 @@ export default function Home() {
           <a href="#bio">Bio</a>
         </nav>
         <div className="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Resume</a>
+          <a href="https://Linkedin.com/in/Yoendryferro">LinkedIn</a>
+          <a href="https://github.com/yoendryf">GitHub</a>
         </div>
       </aside>
 
@@ -57,10 +56,10 @@ export default function Home() {
           <h3>Resume</h3>
           <p>You can view or download my resume for an overview of my experience, skills, and projects.</p>
           <div className="actions" style={{ justifyContent: "center", marginTop: "1rem" }}>
-            <a href="/my-portfolio/Resume_yf.pdf" target="_blank" rel="noopener noreferrer" className="btn dark">
+            <a href="/Resume_yf.pdf" target="_blank" rel="noopener noreferrer" className="btn dark">
               View Resume
             </a>
-            <a href="/my-portfolio/Resume_yf.pdf" download className="btn green">
+            <a href="/Resume_yf.pdf" download className="btn green">
               Download Resume
             </a>
           </div>
@@ -73,7 +72,7 @@ export default function Home() {
     {/* School Logo */}
     <div style={{ display: "flex", alignItems: "center", gap: "1rem", justifyContent: "center" }}>
     <div className="education-row">
-  <img src="/my-portfolio/UCFLogo.png" alt="UCF Logo" className="education-logo" />
+  <img src="/UCFLogo.png" alt="UCF Logo" className="education-logo" />
   <div className="education-details">
     <h4>University of Central Florida</h4>
     <p>Graduation: May 2026</p>
@@ -147,38 +146,38 @@ export default function Home() {
       {
         title: "SHPE Pro Dev Committee",
         role: "Active Member",
-        image: "/my-portfolio/ProDev.png",
+        image: "/ProDev.png",
         desc: "Participated in the Professional Development Committee, supporting career development by critiquing resumes, interview responses, and elevator pitches"
       },
       {
         title: "SHPE Tech Committee",
         role: "Active Member",
-        image: "/my-portfolio/TechCom.png",
+        image: "/TechCom.png",
         desc: "Contributed to the Tech Committee, providing guidance and support in various technical projects."
       },
       {
         title: "MentorSHPE",
         role: "Mentor",
-        image: "/my-portfolio/MentorSHPE.png",
+        image: "/MentorSHPE.png",
         desc: "Served as a Mentor in the MentorSHPE program, providing guidance and support to five undergraduate students in computer science, focusing on academic achievement and career development."
       },
       {
         title: "Bloomberg Tech Lab",
         role: "Participant",
-        image: "/my-portfolio/TechLab.jpg",
+        image: "/TechLab.jpg",
         desc: "One of 40 students selected to collaborate with Bloomberg engineers in a small group setting to build an application using RabbitMQ and Docker."
       },
       {
         title: "SHPE 2024 Conference",
         role: "Participant",
-        image: "/my-portfolio/Region7.jpg",
+        image: "/Region7.jpg",
         desc: "Engaged in professional development through business networking events, hospitality suites, and the national career fair. Gained insight into industry trends, connected with recruiters from leading tech companies, and expanded my network within the STEM and Hispanic engineering communities.",
         link: "https://www.shpe.org/events/national-convention"
       },
       {
         title: "Shellhacks 2024",
         role: "Participant",
-        image: "/my-portfolio/ShellHacksImage.png",
+        image: "/ShellHacksImage.png",
         desc: "Collaborated with my SHPE mentees to develop Future Fund, a personal finance web app. Attended presentations and tech talks from leading companies on industry tools, technologies, and success strategies. The weekend-long hackathon strengthened my skills in time management, leadership, and cross-functional teamwork.",
         link: "https://shellhacks.net/"
       }
@@ -256,34 +255,34 @@ export default function Home() {
     {[
       {
         title: "Future Fund",
-        image: "/my-portfolio/FutureFundImage.png",
+        image: "/FutureFundImage.png",
         desc: "An interactive website built at Florida’s largest hackathon that uses a chatbot and investment simulator to teach users the power of compound interest.",
-        link: "/my-portfolio/projects/FutureFund"
+        link: "/projects/FutureFund"
       },
       {
         title: "Fix My City",
-        image: "/my-portfolio/FixMyCityDash.png",
+        image: "/FixMyCityDash.png",
         desc: "A full-stack MERN app that lets users report and search for local infrastructure issues.",
-        link: "/my-portfolio/projects/FixMyCity"
+        link: "/projects/FixMyCity"
       },
       {
         title: "Gashapon Robot",
-        image: "/my-portfolio/Gashapon.png",
+        image: "/Gashapon.png",
         desc: "An Arduino-based vending machine that dispenses random capsules using a web-controlled UI.",
-        link: "/my-portfolio/projects/Gashapon"
+        link: "/projects/Gashapon"
       },
       {
         title: "Kingdom of Greed",
-        image: "/my-portfolio/TitleScreen.png",
-        image2: "/my-portfolio/KOGAnimation.png",
+        image: "/TitleScreen.png",
+        image2: "/KOGAnimation.png",
         desc: "A fantasy-themed dungeon crawler built in Unity featuring procedurally generated dungeons, original character sprites and animations, and branching gameplay.",
-        link: "/my-portfolio/projects/KingdomOfGreed"
+        link: "/projects/KingdomOfGreed"
       },
       {
         title: "Christelle.com",
-        image: "/my-portfolio/project4.jpg",
+        image: "/project4.jpg",
         desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
-        link: "Christelle.com"
+        link: "https://Christellephotography.com"
       },
     ].map((project, idx) => (
       <div className="project-card" key={idx}>
@@ -338,11 +337,11 @@ export default function Home() {
       </p>
     </div>
     <div className="bio-photos">
-      <img src="/my-portfolio/Iguana.jpg" alt="picture" />
+      <img src="/Iguana.jpg" alt="picture" />
       <p>My favorite painting i've made</p>
-      <img src="/my-portfolio/KneeBoarding.jpg" alt="picture" />
+      <img src="/KneeBoarding.jpg" alt="picture" />
       <p>Knee boarding in Key Largo</p>
-      <img src="/my-portfolio/Grad.jpg" alt="picture" />
+      <img src="/Grad.jpg" alt="picture" />
       <p>Im a first generation college student!</p>
     </div>
   </div>
