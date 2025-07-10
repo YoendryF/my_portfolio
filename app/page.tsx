@@ -280,7 +280,7 @@ export default function Home() {
       },
       {
         title: "Christelle.com",
-        image: "/christelle.JPG",
+        image: "/Christelle.JPG",
         desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
         link: "https://Christellephotography.com"
       },
