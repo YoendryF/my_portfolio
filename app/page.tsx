@@ -280,7 +280,7 @@ export default function Home() {
       },
       {
         title: "Christelle.com",
-        image: "/project4.jpg",
+        image: "/christelle.JPG",
         desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
         link: "https://Christellephotography.com"
       },
@@ -341,7 +341,7 @@ export default function Home() {
       <p>My favorite painting i've made</p>
       <img src="/KneeBoarding.jpg" alt="picture" />
       <p>Knee boarding in Key Largo</p>
-      <img src="/Grad.jpg" alt="picture" />
+      <img src="/Grad.JPG" alt="picture" />
       <p>Im a first generation college student!</p>
     </div>
   </div>
