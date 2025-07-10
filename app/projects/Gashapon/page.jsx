@@ -1,29 +1,59 @@
 export default function GashaponPage() {
     return (
       <main className="main-content">
-        <h1>Future Fund</h1>
-        <p>
-          Future Fund is a personal finance education tool built during ShellHacks 2024. 
-          It features an AI chatbot and an investment simulator to help users understand the 
-          impact of compound interest.
-        </p>
-  
-        <h2>Tech Stack</h2>
+        <h1>Gachabot: Smart Gashabon robot</h1>
+
+        <div className="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/O0Argb7OCwQ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+
+
+
+        <h2>Project Details</h2>
+
+        <h2>Technologies Used</h2>
         <ul>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>MongoDB</li>
-          <li>OpenAI API (for chatbot)</li>
+          <li>C++</li>
+          <li>Arduino</li>
+          <li>Coin Counter</li>
+          <li>CAD</li>
+          <li>Bamboo Labs 3D Printer</li>
         </ul>
-  
-        <h2>Screenshots</h2>
-        <img src="/my-portfolio/FutureFundImage.png" alt="Future Fund Screenshot" style={{ maxWidth: "100%", borderRadius: "8px" }} />
-  
-        <h2>Challenges & Takeaways</h2>
-        <p>
-          Built in 36 hours, the project emphasized time management, design thinking, and 
-          API integration. Working as a team helped us iterate quickly and focus on user-centered features.
-        </p>
+
+        <h2>Hardware/Design</h2>
+        <ul>
+          <li>Release Mechanism</li>
+          <li>Capsules</li>
+          <li>Frame</li>
+          <li>Screen</li>
+          <li>Capsule Slide</li>
+          <li>Coin Acceptor</li>
+        </ul>
+
+        <h2>Software/Algorithm</h2>
+        <ul>
+            <li>Call Out Behavior</li>
+            <li>Animations</li>
+            <li>Sounds</li>
+        </ul>
+
+        <h2>Demo Video</h2>
+
+        <h2>Report</h2>
+
+        <h2>Presentation Slides</h2>
+
+       
+
       </main>
     );
   }
