@@ -17,7 +17,7 @@ export default function GashaponPage() {
         </div>
 
         <h2 className={styles.TechUsed}>Technologies Used</h2>
-        <ul>
+        <ul className={styles.techList}>
           <li>C++</li>
           <li>Arduino</li>
           <li>Coin Counter</li>
