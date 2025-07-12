@@ -1,4 +1,13 @@
 /* GashaponPage.module.css */
+.gashaponMain {
+  max-width: 1024px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .heading {
   color: #c0392b;
   font-size: 2.5rem;
