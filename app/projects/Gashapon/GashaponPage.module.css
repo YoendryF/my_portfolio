@@ -20,9 +20,11 @@
   padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 6px;
+  margin: 0 auto 2rem auto;
   margin-bottom: 2rem;
   align-items: center;
   width: fit-content;
+  justify-content: center;
 }
 
 .videoContainer iframe {
