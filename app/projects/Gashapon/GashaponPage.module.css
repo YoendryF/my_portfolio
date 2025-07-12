@@ -69,8 +69,7 @@
 
 .CoinAccept img {
   max-width: 200px;
-  height: auto;
-  border-radius: 8px;
+  height: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
