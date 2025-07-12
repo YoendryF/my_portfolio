@@ -46,19 +46,25 @@ export default function GashaponPage() {
             <h2>Software/Algorithm</h2>
             <ul>
                 <li>Call Out Behavior</li>
-                <li>Animations</li>
+                <li>Expressions</li>
                 <li>Sounds</li>
             </ul>
           </div>
 
         </div>
-        <h2>Demo Video</h2>
+        <div className={styles.armLinks}>
+          <div className={styles.leftArm}>
+            <a href="/path-to-your-report.pdf" target="_blank" rel="noopener noreferrer">
+              📄 View Report
+            </a>
+          </div>
 
-        <h2>Report</h2>
-
-        <h2>Presentation Slides</h2>
-
-       
+          <div className={styles.rightArm}>
+            <a href="/path-to-your-presentation.pdf" target="_blank" rel="noopener noreferrer">
+              📊 View Slides
+            </a>
+          </div>
+        </div>
 
       </main>
     );
