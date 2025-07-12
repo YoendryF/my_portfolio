@@ -3,7 +3,7 @@ import styles from './GashaponPage.module.css';
 export default function GashaponPage() {
     return (
       <main className={`${styles.gashaponMain}`}>
-        <h1 className={styles.heading}>Gachabot: Smart Gashabon robot</h1>
+        <h1 className={styles.heading}>GachaBot: Smart Gachapon robot</h1>
         
         <div className={styles.videoContainer}>
           <iframe
@@ -16,12 +16,7 @@ export default function GashaponPage() {
           ></iframe>
         </div>
 
-
-
-
-        <h2>Project Details</h2>
-
-        <h2>Technologies Used</h2>
+        <h2 className={styles.TechUsed}>Technologies Used</h2>
         <ul>
           <li>C++</li>
           <li>Arduino</li>
