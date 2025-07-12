@@ -4,8 +4,8 @@ export default function GashaponPage() {
     return (
       <main className="main-content">
         <h1>Gachabot: Smart Gashabon robot</h1>
-
-        <div className="video-container">
+        
+        <div className={styles.videoContainer}>
           <iframe
             width="560"
             height="315"
