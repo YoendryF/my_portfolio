@@ -39,7 +39,7 @@ export default function GashaponPage() {
           </div>
 
           <div className={styles.CoinAccept}>
-            <img src="/your-image-path.jpg" alt="Robot diagram" />
+            <img src="/CoinAccept.png" alt="Robot diagram" />
           </div>
 
           <div className={styles.softwareSection}>
