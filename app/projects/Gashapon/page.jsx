@@ -24,24 +24,34 @@ export default function GashaponPage() {
           <li>CAD</li>
           <li>Bamboo Labs 3D Printer</li>
         </ul>
+        <div className={styles.hardwareSoftwareGrid}>
 
-        <h2>Hardware/Design</h2>
-        <ul>
-          <li>Release Mechanism</li>
-          <li>Capsules</li>
-          <li>Frame</li>
-          <li>Screen</li>
-          <li>Capsule Slide</li>
-          <li>Coin Acceptor</li>
-        </ul>
+          <div className={styles.hardwareSection}>
+            <h2>Hardware/Design</h2>
+            <ul>
+              <li>Release Mechanism</li>
+              <li>Capsules</li>
+              <li>Frame</li>
+              <li>Screen</li>
+              <li>Capsule Slide</li>
+              <li>Coin Acceptor</li>
+            </ul>
+          </div>
 
-        <h2>Software/Algorithm</h2>
-        <ul>
-            <li>Call Out Behavior</li>
-            <li>Animations</li>
-            <li>Sounds</li>
-        </ul>
+          <div className={styles.CoinAccept}>
+            <img src="/your-image-path.jpg" alt="Robot diagram" />
+          </div>
 
+          <div className={styles.softwareSection}>
+            <h2>Software/Algorithm</h2>
+            <ul>
+                <li>Call Out Behavior</li>
+                <li>Animations</li>
+                <li>Sounds</li>
+            </ul>
+          </div>
+
+        </div>
         <h2>Demo Video</h2>
 
         <h2>Report</h2>
