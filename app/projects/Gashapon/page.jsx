@@ -38,6 +38,22 @@ export default function GashaponPage() {
           </ul>
         </div>
 
+        <div className={styles.coinAndArmsWrapper}>
+          <div className={styles.leftArm}>
+            <a href="/path-to-your-report.pdf" target="_blank" rel="noopener noreferrer">
+              📄 View Report
+            </a>
+          </div>
+
+          <div className={styles.CoinAccept}>
+            <img src="/CoinAccept.png" alt="Robot Coin Acceptor" />
+          </div>
+
+          <div className={styles.rightArm}>
+            <a href="/path-to-your-presentation.pdf" target="_blank" rel="noopener noreferrer">
+              📊 View Slides
+            </a>
+          </div>
         <div className={styles.softwareSection}>
           <h2>Software/Algorithm</h2>
           <ul>
@@ -47,24 +63,7 @@ export default function GashaponPage() {
           </ul>
         </div>
       </div>
-
-      <div className={styles.coinAndArmsWrapper}>
-        <div className={styles.leftArm}>
-          <a href="/path-to-your-report.pdf" target="_blank" rel="noopener noreferrer">
-            📄 View Report
-          </a>
-        </div>
-
-        <div className={styles.CoinAccept}>
-          <img src="/CoinAccept.png" alt="Robot Coin Acceptor" />
-        </div>
-
-        <div className={styles.rightArm}>
-          <a href="/path-to-your-presentation.pdf" target="_blank" rel="noopener noreferrer">
-            📊 View Slides
-          </a>
-        </div>
-      </div>
+    </div>
     </main>
   );
 }
