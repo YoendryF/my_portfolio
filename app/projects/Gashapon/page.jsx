@@ -65,6 +65,8 @@ export default function GashaponPage() {
           </ul>
         </div>
       </div>
+    <h2 className={styles.ProjectSummary}>Project Summary</h2>
+    <p>An intelligent system is a machine that manipulates its environment to optimizes its chances of sucess. </p>
     </main>
   );
 }
