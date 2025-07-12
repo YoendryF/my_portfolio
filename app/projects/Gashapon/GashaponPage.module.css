@@ -77,20 +77,18 @@
 .armLinks {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
-  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .leftArm, .rightArm {
-  flex: 1;
-  max-width: 180px;
-  padding: 1rem;
-  background-color: #f4f4f4;
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
   border: 3px solid #333;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
   font-weight: bold;
-  box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
@@ -101,7 +99,5 @@
 .leftArm a, .rightArm a {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
-
-
