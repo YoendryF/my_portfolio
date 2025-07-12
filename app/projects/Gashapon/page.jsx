@@ -24,7 +24,7 @@ export default function GashaponPage() {
         <li>CAD</li>
         <li>Bamboo Labs 3D Printer</li>
       </ul>
-
+      
       <div className={styles.hardwareSoftwareGrid}>
         <div className={styles.hardwareSection}>
           <h2>Hardware/Design</h2>
@@ -38,7 +38,7 @@ export default function GashaponPage() {
           </ul>
         </div>
 
-        <div className={styles.coinAndArmsWrapper}>
+        <div className={styles.centerSection}>
           <div className={styles.leftArm}>
             <a href="/path-to-your-report.pdf" target="_blank" rel="noopener noreferrer">
               📄 View Report
@@ -54,6 +54,8 @@ export default function GashaponPage() {
               📊 View Slides
             </a>
           </div>
+        </div>
+
         <div className={styles.softwareSection}>
           <h2>Software/Algorithm</h2>
           <ul>
@@ -63,7 +65,6 @@ export default function GashaponPage() {
           </ul>
         </div>
       </div>
-    </div>
     </main>
   );
 }
