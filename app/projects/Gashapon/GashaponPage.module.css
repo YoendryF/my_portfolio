@@ -13,3 +13,13 @@
   border-radius: 12px;
   margin-bottom: 2rem;
 }
+
+.videoContainer iframe {
+  border: 4px solid #888; 
+  border-radius: 12px;
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  display: block;
+  margin: 0 auto;
+}
