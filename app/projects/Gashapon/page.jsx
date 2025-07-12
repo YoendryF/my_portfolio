@@ -40,7 +40,7 @@ export default function GashaponPage() {
 
         <div className={styles.centerSection}>
           <div className={styles.leftArm}>
-            <a href="/GashaponReport.docx" target="_blank" rel="noopener noreferrer">
+            <a href="/GashaponReport.pdf" target="_blank" rel="noopener noreferrer">
               📄 View Report
             </a>
           </div>
