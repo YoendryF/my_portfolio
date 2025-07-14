@@ -822,3 +822,39 @@ s
     }
   }
     
+
+/* Mobile Configurations */
+@media (max-width: 768px) {
+  .hardwareSoftwareGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .centerSection {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  .leftArm,
+  .rightArm {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .CoinAccept img {
+    width: 180px;
+  }
+
+  .techList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoContainer iframe {
+    width: 100%;
+    height: auto;
+  }
+}
