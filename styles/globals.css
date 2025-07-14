@@ -828,6 +828,19 @@ s
       background-position: -320px 0;
     }
   }
+
+  .menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+  }
     
 
 /* Mobile Configurations */
@@ -865,8 +878,23 @@ s
     height: auto;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
   .sidebar {
-    display: none;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #1e293b;
+    transition: left 0.3s ease;
+    z-index: 998;
+  }
+
+  .sidebar.open {
+    left: 0;
   }
 
   .main-content {

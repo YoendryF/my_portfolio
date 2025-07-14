@@ -1,6 +1,8 @@
 // app/layout.tsx
 import { ReactNode } from 'react'
+import SidebarLayout from '../components/SidebarLayout';
 import '../styles/globals.css';
+
 
 export const metadata = {
   title: 'My Portfolio',
@@ -16,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
       </head>
       <body style={{ fontFamily: 'Inter, sans-serif' }}>
-        {children}
+        <SidebarLayout>{children}</SidebarLayout>
       </body>
     </html>
   );
