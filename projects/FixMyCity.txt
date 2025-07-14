@@ -1,6 +1,6 @@
 1:HL["/_next/static/css/f14910d403bfc717.css","style",{"crossOrigin":""}]
-0:["Ty_2VR1ZCCJITIG8yuWuI",[[["",{"children":["projects",{"children":["FixMyCity",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f14910d403bfc717.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
-4:I[8665,["185","static/chunks/app/layout-2998d2a3a6e752e0.js"],""]
+0:["nS3bafaAnbtDgj7ZNHWv_",[[["",{"children":["projects",{"children":["FixMyCity",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f14910d403bfc717.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[8665,["185","static/chunks/app/layout-d3a904ae6e546f5a.js"],""]
 5:I[6954,[],""]
 6:I[7264,[],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"My Portfolio"}],["$","meta","2",{"name":"description","content":"Created by Yoendry"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]

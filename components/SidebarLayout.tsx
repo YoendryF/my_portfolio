@@ -5,7 +5,13 @@ import { useState, useEffect } from 'react';
 export default function SidebarLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  // Close sidebar on resize if desktop
+  {/*Closes Sidebar if link clicked*/}
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 768) {
+      setSidebarOpen(false);
+    }
+  };
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -32,14 +38,14 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
         <h2>Yoendry Ferro Santizo</h2>
         <p>Hi, I’m Yoendry, an aspiring software engineer. Welcome to my website</p>
         <div className="nav-links">
-          <a href="#intro">Intro</a>
-          <a href="#projects">Projects</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#bio">Bio</a>
+          <a href="#top" onClick={handleLinkClick}>Intro</a>
+          <a href="#projects" onClick={handleLinkClick}>Projects</a>
+          <a href="#resume" onClick={handleLinkClick}>Resume</a>
+          <a href="#contact" onClick={handleLinkClick}>Contact</a>
+          <a href="#Education" onClick={handleLinkClick}>Education</a>
+          <a href="#Skills" onClick={handleLinkClick}>Skills</a>
+          <a href="#Experiences/Extracurriculars" onClick={handleLinkClick}>Experiences</a>
+          <a href="#bio" onClick={handleLinkClick}>Bio</a>
         </div>
         <div className="social-links">
           <a href="https://linkedin.com" target="_blank">LinkedIn</a>
