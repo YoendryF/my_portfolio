@@ -811,6 +811,13 @@ s
     background-position: 0 0;
     animation: spriteAnim 1s steps(6) infinite; /* adjust steps and duration */
   }
+
+  .bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  }
+
   
   /* Sprite animation */
   @keyframes goblinWalk {
@@ -856,5 +863,26 @@ s
   .videoContainer iframe {
     width: 100%;
     height: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+  
+  .bio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-photos {
+    justify-content: center;
+  }
+
+  .bio-text {
+    text-align: center;
   }
 }
