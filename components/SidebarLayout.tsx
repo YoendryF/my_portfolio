@@ -1,33 +1,49 @@
-// com/SidebarLayout.tsx
+// components/SidebarLayout.tsx
 'use client';
 
-import { useState } from 'react';
+import Image from 'next/image';
+import { ReactNode } from 'react';
 
-export default function SidebarLayout({ children }: { children: React.ReactNode }) {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-
+export default function SidebarLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="portfolio-layout">
-      <button
-        className="menu-toggle"
-        onClick={() => setSidebarOpen(!isSidebarOpen)}
-      >
-        ☰
-      </button>
+    <div id="top" className="portfolio-layout">
+      {/* Sidebar */}
+      <aside className="sidebar">
+        <div className="sidebar-top">
+          <h2>Yoendry Ferro Santizo</h2>
+          <div className="profile-img-wrapper">
+            <Image
+              src="/photo1.jpg"
+              alt="Yoendry's Photo"
+              width={100}
+              height={100}
+              className="profile-img"
+            />
+          </div>
+          <p>Hi, I’m Yoendry, an aspiring software engineer. Welcome to my website</p>
+        </div>
 
-      <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <img src="/profile.jpg" alt="Profile" className="profile-img" />
-        <h2>Yoendry Ferro</h2>
-        <p>Software Engineer</p>
-        <div className="nav-links">
-          <a href="#intro">Intro</a>
+        <nav className="nav-links">
+          <a href="#top">Intro</a>
           <a href="#projects">Projects</a>
           <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
+          <a href="#Education">Education</a>
+          <a href="#Skills">Skills</a>
+          <a href="#Experiences/Extracurriculars">Experiences</a>
+          <a href="#bio">Bio</a>
+        </nav>
+
+        <div className="social-links">
+          <a href="https://linkedin.com/in/yoendryferro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/yoendryf" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </aside>
 
-      <main className="main-content">{children}</main>
+      {/* Main content */}
+      <main className="main-content">
+        {children}
+      </main>
     </div>
   );
 }
