@@ -763,10 +763,13 @@ s
     gap: 2rem;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .bio-grid {
       flex-direction: row;
     }
+    .main-content {
+    margin-left: 280px;
+  }
   }
   
   .bio-text {

@@ -1,46 +1,55 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export default function SidebarLayout({ children }: { children: React.ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  // Close sidebar on resize if desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setSidebarOpen(false); 
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div className="portfolio-layout">
-      {/* Toggle button (shows only on small screens) */}
+      {/* Sidebar Toggle button*/}
       <button
-        className="sidebar-toggle"
-        onClick={() => setIsOpen(!isOpen)}
+        className="menu-toggle"
+        onClick={() => setSidebarOpen(!isSidebarOpen)}
+        aria-label="Toggle Menu"
       >
         ☰
       </button>
 
-      <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <div className="sidebar-top">
-          <h2>Yoendry Ferro Santizo</h2>
-          <div className="profile-img-wrapper">
-            <Image src="/photo1.jpg" alt="Profile" width={100} height={100} className="profile-img" />
-          </div>
-          <p>Hi, I’m Yoendry, an aspiring software engineer. Welcome to my website</p>
-        </div>
-        <nav className="nav-links">
-          <a href="#top">Intro</a>
+      <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+        <img src="/profile.jpg" alt="Profile" className="profile-img" />
+        <h2>Yoendry Ferro Santizo</h2>
+        <p>Hi, I’m Yoendry, an aspiring software engineer. Welcome to my website</p>
+        <div className="nav-links">
+          <a href="#intro">Intro</a>
           <a href="#projects">Projects</a>
           <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
-          <a href="#Education">Education</a>
-          <a href="#Skills">Skills</a>
-          <a href="#Experiences/Extracurriculars">Experiences</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#experiences">Experiences</a>
           <a href="#bio">Bio</a>
-        </nav>
+        </div>
         <div className="social-links">
-          <a href="https://linkedin.com/in/yoendryferro">LinkedIn</a>
-          <a href="https://github.com/yoendryf">GitHub</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
         </div>
       </aside>
 
-      <main className="main-content">{children}</main>
+      <main className="main-content">
+        {children}
+      </main>
     </div>
   );
 }
