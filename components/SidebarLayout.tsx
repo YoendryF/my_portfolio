@@ -1,28 +1,29 @@
-// components/SidebarLayout.tsx
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
-import { ReactNode } from 'react';
 
-export default function SidebarLayout({ children }: { children: ReactNode }) {
+export default function SidebarLayout({ children }: { children: React.ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div id="top" className="portfolio-layout">
-      {/* Sidebar */}
-      <aside className="sidebar">
+    <div className="portfolio-layout">
+      {/* Toggle button (shows only on small screens) */}
+      <button
+        className="sidebar-toggle"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        ☰
+      </button>
+
+      <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-top">
           <h2>Yoendry Ferro Santizo</h2>
           <div className="profile-img-wrapper">
-            <Image
-              src="/photo1.jpg"
-              alt="Yoendry's Photo"
-              width={100}
-              height={100}
-              className="profile-img"
-            />
+            <Image src="/photo1.jpg" alt="Profile" width={100} height={100} className="profile-img" />
           </div>
           <p>Hi, I’m Yoendry, an aspiring software engineer. Welcome to my website</p>
         </div>
-
         <nav className="nav-links">
           <a href="#top">Intro</a>
           <a href="#projects">Projects</a>
@@ -33,17 +34,13 @@ export default function SidebarLayout({ children }: { children: ReactNode }) {
           <a href="#Experiences/Extracurriculars">Experiences</a>
           <a href="#bio">Bio</a>
         </nav>
-
         <div className="social-links">
-          <a href="https://linkedin.com/in/yoendryferro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/yoendryf" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/yoendryferro">LinkedIn</a>
+          <a href="https://github.com/yoendryf">GitHub</a>
         </div>
       </aside>
 
-      {/* Main content */}
-      <main className="main-content">
-        {children}
-      </main>
+      <main className="main-content">{children}</main>
     </div>
   );
 }

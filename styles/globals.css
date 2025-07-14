@@ -220,6 +220,7 @@ footer {
 .portfolio-layout {
     display: flex;
     min-height: 100vh;
+    flex-direction: row;
   }
 
   .profile-img-wrapper {
@@ -318,7 +319,7 @@ s
   
   /* Main content */
   .main-content {
-    margin-left: 300px;
+    margin: 0 auto;
     flex-grow: 1;
     padding: 3rem 2rem;
     color: #333;
