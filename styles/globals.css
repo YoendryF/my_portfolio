@@ -885,12 +885,12 @@ s
 
   .sidebar {
     position: fixed;
-    left: -300px;
+    left: -100%;
     top: 0;
     height: 100vh;
-    width: 250px;
+    width: 80%;
     background-color: #1e293b;
-    transition: left 0.3s ease;
+    transition: left 0.3s ease-in-out;
     z-index: 998;
   }
 
@@ -898,6 +898,10 @@ s
     left: 0;
   }
 
+  .sidebar-toggle {
+    display: block;
+  }
+  
   .main-content {
     margin-left: 0;
     padding: 2rem 1rem;
