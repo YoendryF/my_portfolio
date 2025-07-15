@@ -500,7 +500,6 @@ s
     width: 100%;
     text-align: center;
     animation: fadeIn 0.8s ease-out both;
-    right: -10rem;
   }
   
   .projects-section h3 {
