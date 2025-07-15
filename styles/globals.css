@@ -322,11 +322,11 @@ s
   
   /* Main content */
   .main-content {
-  margin-left: 280px;
-  width: calc(100% - 280px);
+  margin-left: 260px;
+  width: calc(100% - 260px);
   max-width: unset;
   flex-grow: 1;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   color: #333;
   display: flex;
   flex-direction: column;
