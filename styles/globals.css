@@ -324,7 +324,7 @@ s
   
   /* Main content */
   .main-content {
-  margin-left: 260px;
+  margin-left: 230px;
   width: calc(100% - 260px);
   max-width: unset;
   flex-grow: 1;
