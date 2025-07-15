@@ -108,7 +108,7 @@ export default function Home() {
   </div>
 </section>
 
-<section id="Experiences/Extracurriculars" className="intro-card">
+<section id="Experiences/Extracurriculars" className="intro-card section card">
   <h3>Experiences & Extracurriculars</h3>
   <div className="experience-grid">
     {[
@@ -170,7 +170,7 @@ export default function Home() {
 </section>
 
 
-<section id="contact" className="contact-card">
+<section id="contact" className="contact-card section-card">
   <h3>Contact Me</h3>
   <p>Want to reach out? Feel free to copy my email or follow me on LinkedIn:</p>
   <div className="contact-links">
