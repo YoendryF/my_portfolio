@@ -324,8 +324,8 @@ s
   
   /* Main content */
   .main-content {
-  margin-left: 220px;
-  width: calc(100% - 260px);
+  margin-left: 190px;
+  width: calc(100% - 240px);
   max-width: unset;
   flex-grow: 1;
   padding: 2rem 2rem;
