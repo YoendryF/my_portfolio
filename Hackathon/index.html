@@ -63,6 +63,17 @@
     </style>
 </head>
 <body>
+    <div id="welcome-popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Welcome to Future Fund!</h2>
+    <p> Welcome! This was my very first website, created during ShellHacks 2024 as part of a team of four. 
+        We built this educational platform to help users better understand personal finance, featuring a chatbot and full Spanish translations.
+        Please note: the site is no longer actively maintained, so some features may be outdated.
+    </p>
+  </div>
+</div>
+
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
@@ -262,5 +273,12 @@
             document.getElementById('footer-text').innerText = translations[lang].footerText;
         });
     </script>
+    <script>
+    function closePopup() {
+        document.getElementById('welcome-popup').style.display = 'none';
+    }
+    </script>
+
+
 </body>
 </html>
