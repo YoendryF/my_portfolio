@@ -164,7 +164,7 @@ export default function Home() {
           )}
         </div>
       </div>
-    ))};
+    ))}
     
   </div>
 </section>
@@ -248,7 +248,7 @@ export default function Home() {
         link: "/projects/KingdomOfGreed"
       },
       {
-        title: "Christelle.com",
+        title: "ChristellePhotography.com",
         image: "/ChristellePhotography.PNG",
         desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
         link: "https://Christellephotography.com"
