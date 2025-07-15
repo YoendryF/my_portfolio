@@ -33,7 +33,7 @@ nav {
     justify-content: center;  /* Center the links */
     align-items: center;
     padding: 1rem 1.5rem;
-    gap: 1.5rem;
+    gap: 1.25rem;
     font-weight: 500;
     font-size: 1.125rem;
     backdrop-filter: blur(6px);
