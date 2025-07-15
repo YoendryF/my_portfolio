@@ -248,7 +248,7 @@ export default function Home() {
         link: "/projects/KingdomOfGreed"
       },
       {
-        title: "ChristellePhotography.com",
+        title: "ChristellePhotography",
         image: "/ChristellePhotography.PNG",
         desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
         link: "https://Christellephotography.com"
