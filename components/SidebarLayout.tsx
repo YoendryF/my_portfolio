@@ -1,9 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+
 
 export default function SidebarLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const pathname = usePathname();
+  const shouldHideSidebar = pathname.startsWith('/projects/') && pathname !== '/projects';
 
   {/*Closes Sidebar if link clicked*/}
   const handleLinkClick = () => {
