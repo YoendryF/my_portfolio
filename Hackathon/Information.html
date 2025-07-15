@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        #chatbot {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-window {
+            border: 1px solid #0077cc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        #messages {
+            height: 100%;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #user-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #0077cc;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        #send-button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #0077cc;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        #send-button:hover {
+            background: #005fa3;
+        }
+
+        #messages div {
+            margin: 5px 0;
+        }
+
+        #messages div:nth-child(odd) {
+            text-align: left;
+        }
+
+        #messages div:nth-child(even) {
+            text-align: right;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .language-selector {
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #0077cc;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #0077cc;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .card {
+            background: #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #0077cc;
+            margin-top: 0;
+        }
+
+        .card p {
+            margin: 10px 0;
+        }
+
+        .formula {
+            background: #f8f9fa;
+            border: 1px solid #0077cc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.2em;
+            position: relative;
+        }
+
+        .formula::before {
+            content: "Formula:";
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-weight: bold;
+            color: #0077cc;
+            background: #fff;
+            padding: 0 5px;
+        }
+
+        .formula span {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Compound Interest</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="#info" id="info-link">Information</a></li>
+                <li><a href="#resources" id="resources-link">Resources</a></li>
+                <li><a href="Simulator.html" id="simulate-link">Simulate</a></li>
+                <li><a href="Examples.html" id="example-simulations-link">Example Simulations</a></li>
+            </ul>
+        </nav>
+        <select class="language-selector" id="language-selector">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 id="home-title">Welcome!</h2>
+            <p id="home-text">This tool helps you understand and calculate the total amount of interest earned on an investment over time.</p>
+        </section>
+
+        <section id="info">
+            <h2 id="info-title">Understanding Compound Interest</h2>
+            <p id="info-text">Compound Interest is the interest calculated on the initial principal of an investment, as well as on the accumulated interest from previous periods. This means that not only do you earn interest on your initial amount, but you also earn interest on the interest that has already been added to your investment. This "interest on interest" effect allows your investment to grow at an accelerating rate over time, making compound interest a powerful tool for building wealth. In simple terms, the longer you leave your money invested, the more it can grow due to the compounding effect..</p>
+            <div class="formula">
+                <span><strong>A = P (1 + r/n)^(nt)</strong></span>
+                <span id="f1"><strong>A:</strong> Future value of the investment/loan, including interest</span>
+                <span id="f2"><strong>P:</strong> Principal investment amount (initial deposit or loan amount)</span>
+                <span id="f3"><strong>r:</strong> Annual interest rate (decimal)</span>
+                <span id="f4"><strong>n:</strong> Number of times that interest is compounded per unit t</span>
+                <span id="f5"><strong>t:</strong> Time the money is invested or borrowed for, in years</span>
+            </div>
+        </section>
+
+        <section id="compound-interest">
+            <h2>Compound Interest and Its Importance</h2>
+            <div class="card">
+                <h3 id="what-is-compound-interest">What is Compound Interest?</h3>
+                <p id="CPText">
+                    Compound interest is a key concept in finance that refers to the process of earning interest on both the initial principal and the accumulated interest from previous periods. This means your money can grow exponentially over time, making it an essential factor in wealth-building strategies.
+                </p>
+                <p id="understandingText">
+                    Understanding how compound interest works is crucial for effective investing and saving. The longer your money is invested, the more pronounced the effect of compounding becomes. For example, even a modest annual interest rate can lead to significant growth over several years due to the compounding effect.
+                </p>
+                <p id="summaryText">
+                    Whether you’re saving for retirement or investing in stocks, leveraging compound interest can help maximize your returns and secure your financial future.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 id="investmentsTitle">Investments</h3>
+                <p id="investmentsText">Investments such as stocks and bonds often generate returns that can be reinvested to earn compound interest. The longer your money stays invested, the more it can grow.</p>
+            </div>
+
+            <div class="card">
+                <h3 id="retirementTitle">401(k)s and Retirement</h3>
+                <p id="retirementText">A 401(k) is a retirement savings plan that allows employees to save and invest a portion of their paycheck before taxes are taken out. Contributions grow tax-free until withdrawal, allowing for greater compound interest growth.</p>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2 id="resources-title">Useful Resources</h2>
+            <p id="resources-text">Check out these videos to learn more about compound interest:</p>
+            <ul>
+                <li><a href="https://youtu.be/jTW777ENc3c?si=pm8eL0N4pu18PftW" target="_blank">Compound Interest Explained in One Minute</a></li>
+                <li><a href="https://youtu.be/Hn0eLcOSQGw?si=qhmonb8A2cIvibfI" target="_blank">Compound Interest Math Review</a></li>
+                <li><a href="https://youtu.be/DANxKmL3DDw?si=BrMX5sLo5EFP6S2b" target="_blank">Explicación del interés compuesto</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Compact Interest Simulator",
+                homeTitle: "Welcome!",
+                homeText: "This tool helps you understand and calculate the total amount of interest earned on an investment over time.",
+                infoTitle: "Understanding Compound Interest",
+                infoText: "Compound interest is calculated on the initial principal, which includes all of the accumulated interest from previous periods.",
+                resourcesTitle: "Useful Resources",
+                resourcesText: "Check out these videos to learn more about compound interest:",
+                compoundInterestTitle: "Compound Interest and Its Importance",
+                whatIsCompoundInterest: "What is Compound Interest?",
+                CPText: "Compound interest is the interest calculated on the initial principal and on the accumulated interest from previous periods. This means interest is earned on both the money you invest and the interest that accumulates over time. The effect of 'interest on interest' can significantly increase your investment returns over the long term.",
+                understandingText: "Understanding how compound interest works is crucial for effective investing and saving. The longer your money is invested, the more pronounced the effect of compounding becomes. For example, even a modest annual interest rate can lead to significant growth over several years due to the compounding effect.",
+                summaryText: "Whether you’re saving for retirement or investing in stocks, leveraging compound interest can help maximize your returns and secure your financial future.",
+                investmentsTitle: "Investments",
+                investmentsText: "Investments such as stocks and bonds often generate returns that can be reinvested to earn compound interest. The longer your money stays invested, the more it can grow.",
+                retirementTitle: "401(k)s and Retirement",
+                retirementText: "A 401(k) is a retirement savings plan that allows employees to save and invest a portion of their paycheck before taxes are taken out. Contributions grow tax-free until withdrawal, allowing for greater compound interest growth.",
+                navItems: {
+                    home: "Home",
+                    info: "Information",
+                    resources: "Resources",
+                    simulate: "Simulate",
+                    exampleSimulations: "Example Simulations",
+                },
+                f1: "<strong>A</strong>: Future value of the investment/loan, including interest",
+                f2: "<strong>P</strong>: Principal investment amount (initial deposit or loan amount)",
+                f3: "<strong>r</strong>: Annual interest rate (decimal)",
+                f4: "<strong>n</strong>: Number of times that interest is compounded per unit t",
+                f5: "<strong>t</strong>: Time the money is invested or borrowed for, in years",
+            },
+            es: {
+                title: "Interés Compuesto",
+                homeTitle: "¡Bienvenido!",
+                homeText: "Esta herramienta te ayuda a entender y calcular el total de interés ganado en una inversión a lo largo del tiempo.",
+                infoTitle: "Entendiendo el Interés Compuesto",
+                infoText: "El interés compuesto se calcula sobre el capital inicial, que incluye todo el interés acumulado de períodos anteriores.",
+                resourcesTitle: "Recursos Útiles",
+                resourcesText: "Consulta estos videos para aprender más sobre el interés compuesto:",
+                compoundInterestTitle: "El Interés Compuesto y Su Importancia",
+                whatIsCompoundInterest: "¿Qué es el Interés Compuesto?",
+                CPText: "El interés compuesto es un concepto clave en finanzas que se refiere al proceso de ganar intereses tanto sobre el capital inicial como sobre los intereses acumulados de períodos anteriores. Esto significa que su dinero puede crecer exponencialmente con el tiempo, lo que lo convierte en un factor esencial en las estrategias de creación de riqueza.",
+                understandingText: "Comprender cómo funciona el interés compuesto es crucial para invertir y ahorrar de manera efectiva. Cuanto más tiempo se invierta su dinero, más pronunciado será el efecto de la capitalización. Por ejemplo, incluso una tasa de interés anual modesta puede conducir a un crecimiento significativo durante varios años debido al efecto compuesto",
+                summaryText: "Ya sea que estés ahorrando para la jubilación o invirtiendo en acciones, aprovechar el interés compuesto puede ayudarte a maximizar tus rendimientos y asegurar tu futuro financiero.",
+                investmentsTitle: "Inversiones",
+                investmentsText: "Las inversiones como acciones y bonos a menudo generan rendimientos que pueden reinvertirse para ganar interés compuesto. Cuanto más tiempo permanezca tu dinero invertido, más puede crecer.",
+                retirementTitle: "401(k) y Jubilación",
+                retirementText: "Un 401(k) es un plan de ahorro para la jubilación que permite a los empleados ahorrar e invertir una parte de su salario antes de que se deduzcan los impuestos. Las contribuciones crecen libres de impuestos hasta el momento del retiro, lo que permite un mayor crecimiento del interés compuesto.",
+                navItems: {
+                    home: "Inicio",
+                    info: "Información",
+                    resources: "Recursos",
+                    simulate: "Simular",
+                    exampleSimulations: "Simulaciones de Ejemplo"
+                },
+                f1: "<strong>A</strong>: Valor futuro de la inversión/préstamo, incluidos los intereses",
+                f2: "<strong>P</strong>: Monto principal de la inversión (depósito inicial o monto del préstamo)",
+                f3: "<strong>r</strong>: Tasa de interés anual (decimal)",
+                f4: "<strong>n</strong>: Número de veces que el interés se compone por unidad t",
+                f5: "<strong>t</strong>: Tiempo por el que se invierte o se pide prestado el dinero, en años"
+            }
+        };
+
+        document.getElementById('language-selector').addEventListener('change', function() {
+            const lang = this.value;
+            document.getElementById('title').textContent = translations[lang].title;
+            document.getElementById('home-title').textContent = translations[lang].homeTitle;
+            document.getElementById('home-text').textContent = translations[lang].homeText;
+            document.getElementById('info-title').textContent = translations[lang].infoTitle;
+            document.getElementById('info-text').textContent = translations[lang].infoText;
+            document.getElementById('resources-title').textContent = translations[lang].resourcesTitle;
+            document.getElementById('resources-text').textContent = translations[lang].resourcesText;
+
+            // Update navigation items
+            document.getElementById('home-link').textContent = translations[lang].navItems.home;
+            document.getElementById('info-link').textContent = translations[lang].navItems.info;
+            document.getElementById('resources-link').textContent = translations[lang].navItems.resources;
+            document.getElementById('simulate-link').textContent = translations[lang].navItems.simulate;
+            document.getElementById('example-simulations-link').textContent = translations[lang].navItems.exampleSimulations;
+            document.getElementById('investmentsTitle').textContent = translations[lang].investmentsTitle
+            document.getElementById('investmentsText').textContent = translations[lang].investmentsText;
+            document.getElementById('retirementTitle').textContent = translations[lang].retirementTitle;
+            document.getElementById('retirementText').textContent = translations[lang].retirementText;
+            document.getElementById('f1').innerHTML = translations[lang].f1;
+            document.getElementById('f2').innerHTML = translations[lang].f2;
+            document.getElementById('f3').innerHTML = translations[lang].f3;
+            document.getElementById('f4').innerHTML = translations[lang].f4;
+            document.getElementById('f5').innerHTML = translations[lang].f5;
+
+            // Update compound interest section
+            const compoundSection = document.getElementById('compound-interest');
+            compoundSection.querySelector('h2').textContent = translations[lang].compoundInterestTitle;
+            compoundSection.querySelector('.card h3:nth-of-type(1)').textContent = translations[lang].whatIsCompoundInterest;
+            compoundSection.querySelector('.card p:nth-of-type(1)').textContent = translations[lang].CPText;
+            compoundSection.querySelector('.card h3:nth-of-type(2)').textContent = translations[lang].investmentsTitle;
+            compoundSection.querySelector('.card p:nth-of-type(2)').textContent = translations[lang].investmentsText;
+            compoundSection.querySelector('.card h3:nth-of-type(3)').textContent = translations[lang].retirementTitle;
+            compoundSection.querySelector('.card p:nth-of-type(3)').textContent = translations[lang].retirementText;
+        });
+    </script>
+
+<section id="chatbot">
+    <h2><i class="fas fa-piggy-bank"></i> Ask a Question</h2>
+    <div id="chat-window">
+        <div id="messages"></div>
+        <div class="input-group">
+            <input type="text" id="user-input" placeholder="Got a Question?" />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+</section>
+</main>
+
+<script>
+document.getElementById('send-button').addEventListener('click', function() {
+    const userInput = document.getElementById('user-input').value;
+    const messagesDiv = document.getElementById('messages');
+    
+    // Display user message
+    const userMessage = document.createElement('div');
+    userMessage.textContent = `You: ${userInput}`;
+    messagesDiv.appendChild(userMessage);
+    
+    // Simulate a bot response
+    const botMessage = document.createElement('div');
+    botMessage.textContent = 'How can I help?';
+    messagesDiv.appendChild(botMessage);
+    
+    // Clear input field
+    document.getElementById('user-input').value = '';
+    
+    // Scroll to the bottom of chat
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+});
+</script>
+</body>
+<footer>
+    <p>&copy; Future Fund</p>
+</footer>
+</html>

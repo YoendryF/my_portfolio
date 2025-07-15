@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title id="page-title">Future Fund</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .language-selector {
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .custom-header {
+            background-image: url('pexels-mikhail-nilov-7828315.jpg');
+            background-repeat: no-repeat;
+            background-attachment: contain;
+            background-size: 100% 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(to right, rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('pexels-mikhail-nivol-7828315.jpg') no-repeat center center; 
+            background-size: cover;
+            color: black;
+        }
+
+        /* Features section */
+        #features {
+            background-color: rgba(50, 133, 8, 0.8);
+            padding: 60px 0;
+        }
+
+        .feature-container {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature-container:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!" id="navbar-brand">Future Fund</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!" id="home-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Simulator.html" id="simulator-link">Simulator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Information.html" id="info-link">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Examples.html" id="examples-link">Examples</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="custom-header py-5">  
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder" id="header-title">Compound Interest Simulator</h1>
+                        <p class="lead mb-4" id="header-description">Simulate your saving growth!</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center align-items-center my-5">
+                            <a class="btn btn-light btn-lg" href="Simulator.html" id="get-started">Get Started</a>
+                            <select class="language-selector" id="language-selector">
+                                <option value="en">English</option>
+                                <option value="es">Spanish</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features section-->
+    <section class="backgroundc py-5 border-bottom green-background" id="features">
+        <div class="px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="card text-center shadow border-0">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3" style="font-size: 2rem;">
+                                <i class="bi bi-cpu"></i>
+                            </div>
+                            <h2 class="h4 fw-bolder" id="simulate-title">Simulate</h2>
+                            <p id="simulate-description">Explore here to get started with a compound interest simulation. Dive into various scenarios to understand potential results.</p>
+                            <a class="text-decoration-none" href="Simulator.html" id="simulate-link">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="card text-center shadow border-0">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3" style="font-size: 2rem;">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <h2 class="h4 fw-bolder" id="examples-title">Examples</h2>
+                            <p id="examples-description">Analyze standout simulations that achieved great results, as well as those that fell short.</p>
+                            <a class="text-decoration-none" href="Examples.html" id="examples-link">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center shadow border-0">
+                        <div class="card-body">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3" style="font-size: 2rem;">
+                                <i class="bi bi-question-circle"></i>
+                            </div>
+                            <h2 class="h4 fw-bolder" id="info-title">Information</h2>
+                            <p id="info-description">Find key information and resources to enhance your understanding and use of compound interests.</p>
+                            <a class="text-decoration-none" href="Information.html" id="info-link">Explore <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developers Section -->
+    <section class="py-5" id="developers">
+        <div class="container px-5">
+            <h2 class="text-center mb-4" id="developers-title">Developed By</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow border-0 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoendry Ferro</h5>
+                            <a href="https://www.linkedin.com/in/yoendryferro" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow border-0 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Diego Mendoza</h5>
+                            <a href="https://www.linkedin.com/in/diego-mendozaucf" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow border-0 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Lucas Rolon</h5>
+                            <a href="https://www.linkedin.com/in/developer3" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow border-0 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Liam Christie</h5>
+                            <a href="https://www.linkedin.com/in/" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5">
+        <div class="container px-5">
+            <p class="m-0 text-center"> &copy; <span id="footer-text">Future Fund</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Language switch functionality
+        document.getElementById('language-selector').addEventListener('change', function() {
+            const lang = this.value;
+
+            const translations = {
+                en: {
+                    pageTitle: "Future Fund",
+                    navbarBrand: "Future Fund",
+                    home: "Home",
+                    simulator: "Simulator",
+                    info: "Info",
+                    examples: "Examples",
+                    headerTitle: "Compound Interest Simulator",
+                    headerDescription: "Simulate your saving growth!",
+                    getStarted: "Get Started",
+                    simulateTitle: "Simulate",
+                    simulateDescription: "Explore here to get started with a compound interest simulation. Dive into various scenarios to understand potential results.",
+                    examplesTitle: "Examples",
+                    examplesDescription: "Analyze standout simulations that achieved great results, as well as those that fell short.",
+                    infoTitle: "Information",
+                    infoDescription: "Find key information and resources to enhance your understanding and use of compound interests.",
+                    developersTitle: "Developed By",
+                    footerText: "Future Fund"
+                },
+                es: {
+                    pageTitle: "Fondo Futuro",
+                    navbarBrand: "Fondo Futuro",
+                    home: "Inicio",
+                    simulator: "Simulador",
+                    info: "Información",
+                    examples: "Ejemplos",
+                    headerTitle: "Simulador de Interés Compuesto",
+                    headerDescription: "¡Simula el crecimiento de tus ahorros!",
+                    getStarted: "Empezar",
+                    simulateTitle: "Simular",
+                    simulateDescription: "Explora aquí para comenzar con una simulación de interés compuesto. Sumérgete en varios escenarios para entender los resultados potenciales.",
+                    examplesTitle: "Ejemplos",
+                    examplesDescription: "Analiza simulaciones destacadas que lograron grandes resultados, así como aquellas que no lo hicieron.",
+                    infoTitle: "Información",
+                    infoDescription: "Encuentra información clave y recursos para mejorar tu comprensión y uso de los intereses compuestos.",
+                    developersTitle: "Desarrollado Por",
+                    footerText: "Fondo Futuro"
+                }
+            };
+
+            document.getElementById('page-title').innerText = translations[lang].pageTitle;
+            document.getElementById('navbar-brand').innerText = translations[lang].navbarBrand;
+            document.getElementById('home-link').innerText = translations[lang].home;
+            document.getElementById('simulator-link').innerText = translations[lang].simulator;
+            document.getElementById('info-link').innerText = translations[lang].info;
+            document.getElementById('examples-link').innerText = translations[lang].examples;
+            document.getElementById('header-title').innerText = translations[lang].headerTitle;
+            document.getElementById('header-description').innerText = translations[lang].headerDescription;
+            document.getElementById('get-started').innerText = translations[lang].getStarted;
+            document.getElementById('simulate-title').innerText = translations[lang].simulateTitle;
+            document.getElementById('simulate-description').innerText = translations[lang].simulateDescription;
+            document.getElementById('examples-title').innerText = translations[lang].examplesTitle;
+            document.getElementById('examples-description').innerText = translations[lang].examplesDescription;
+            document.getElementById('info-title').innerText = translations[lang].infoTitle;
+            document.getElementById('info-description').innerText = translations[lang].infoDescription;
+            document.getElementById('developers-title').innerText = translations[lang].developersTitle;
+            document.getElementById('footer-text').innerText = translations[lang].footerText;
+        });
+    </script>
+</body>
+</html>

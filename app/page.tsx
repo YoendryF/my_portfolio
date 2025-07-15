@@ -226,7 +226,7 @@ export default function Home() {
         title: "Future Fund",
         image: "/FutureFundImage.png",
         desc: "An interactive website built at Florida’s largest hackathon that uses a chatbot and investment simulator to teach users the power of compound interest.",
-        link: "/projects/FutureFund"
+        link: "/Hackathon/index.html"
       },
       {
         title: "Fix My City",
