@@ -901,6 +901,7 @@ s
     background-color: #1e293b;
     transition: left 0.3s ease-in-out;
     z-index: 998;
+    max-height: 100vh;
   }
 
   .sidebar.open {
