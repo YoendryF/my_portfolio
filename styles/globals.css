@@ -243,6 +243,7 @@ footer {
     gap: 1.5rem;
     text-align: center;   
     max-height: 100vh; 
+    overflow-y: auto;
   }
   
   
@@ -902,6 +903,7 @@ s
     transition: left 0.3s ease-in-out;
     z-index: 998;
     max-height: 100vh;
+    overflow-y: auto;
   }
 
   .sidebar.open {
