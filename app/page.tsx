@@ -13,7 +13,7 @@ export default function Home() {
           <h1>Yoendry Ferro Santizo</h1>
           <h2>Software Engineer</h2>
           <p>
-             specialize in building full-stack web apps with clean code, performance,
+            I specialize in building full-stack web apps with clean code, performance,
             and great UX. Check out my <a href="#projects">projects</a> or view my{" "}
             <a href="#resume">resume</a>.
           </p>
@@ -151,7 +151,7 @@ export default function Home() {
         link: "https://shellhacks.net/"
       }
     ].map((exp, idx) => (
-      <div className="experience-card" key={idx}>
+      <div className="experience-card section-card" key={idx}>
         <img src={exp.image} alt={exp.title} />
         <div>
           <h4>{exp.title}</h4>
