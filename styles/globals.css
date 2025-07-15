@@ -839,13 +839,6 @@ s
   }
 
 
-  .section-card {
-  max-width: 1100px;  
-  width: 120%;
-  height: 90%;  
-  left: -50px;
-  }
-
 
   .menu-toggle {
   position: fixed;
@@ -920,7 +913,6 @@ s
   }
   
   .main-content {
-    margin-left: 0;
     padding: 2rem 1rem;
   }
   
