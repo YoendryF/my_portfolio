@@ -63,6 +63,32 @@
     </style>
 </head>
 <body>
+    <div id="welcome-popup" style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #1e293b;
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        display: none;
+        z-index: 9999;
+        max-width: 280px;
+        ">
+        <span><strong>Welcome to Future Fund! 🚀</strong></span>
+        <button onclick="document.getElementById('welcome-popup').style.display='none'" style="
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            cursor: pointer;
+        " aria-label="Close">&times;</button>
+        </div>
+
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
@@ -262,5 +288,12 @@
             document.getElementById('footer-text').innerText = translations[lang].footerText;
         });
     </script>
+    <script>
+    window.addEventListener('load', function () {
+        const popup = document.getElementById('welcome-popup');
+        popup.style.display = 'block';
+    });
+    </script>
+
 </body>
 </html>
