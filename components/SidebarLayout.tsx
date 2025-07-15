@@ -29,13 +29,15 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
   return (
     <div className="portfolio-layout">
       {/* Sidebar Toggle button*/}
-      <button
-        className="menu-toggle"
-        onClick={() => setSidebarOpen(!isSidebarOpen)}
-        aria-label="Toggle Menu"
-      >
-        ☰
-      </button>
+      {!shouldHideSidebar && (
+        <>
+        <button
+          className="menu-toggle"
+          onClick={() => setSidebarOpen(!isSidebarOpen)}
+          aria-label="Toggle Menu"
+        >
+          ☰
+        </button>
 
       <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <img src="/photo1.jpg" alt="Profile" className="profile-img" />
@@ -52,10 +54,12 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
           <a href="#bio" onClick={handleLinkClick}>Bio</a>
         </div>
         <div className="social-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/yoendryferro" target="_blank">LinkedIn</a>
+          <a href="https://github.com/yoendryf" target="_blank">GitHub</a>
         </div>
       </aside>
+      </>
+      )}
 
       <main className="main-content">
         {children}
