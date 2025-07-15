@@ -108,7 +108,7 @@ export default function Home() {
   </div>
 </section>
 
-<section id="Experiences/Extracurriculars" className="intro-card section card">
+<section id="Experiences/Extracurriculars" className="intro-card section-card">
   <h3>Experiences & Extracurriculars</h3>
   <div className="experience-grid">
     {[
