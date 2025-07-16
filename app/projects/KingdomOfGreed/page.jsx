@@ -2,24 +2,7 @@ import styles from './KingdomOfGreedPage.module.css';
 
 export default function KingdomOfGreedPage() {
     return (
-      <main
-        style={{
-          backgroundImage: "url('/KOGBackground.PNG')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh',
-          width: '100%',
-          margin: 0,
-          padding: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          color: 'white',
-          textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)',
-        }}
-      >
+      <main className={styles.fullBackground}>
         <h1>Kingdom Of Greed: Unity Dungeon Crawler</h1>
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         {/*Presentation youtube video, to the left side of the screen*/}{/*Animations, to the right side of the screen*/}
