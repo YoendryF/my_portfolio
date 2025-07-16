@@ -7,7 +7,18 @@
   flex-direction: column;
   gap: 3rem;
 }
-
+.Title{
+  font-family: 'Press Start 2P', monospace;
+  color: #e3b341;
+  font-size: 2rem;
+  text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+  letter-spacing: 1px;
+  text-align: center;
+}
 .fullBackground {
   background-image: url('/KOGBackground.PNG');
   background-size: cover;
