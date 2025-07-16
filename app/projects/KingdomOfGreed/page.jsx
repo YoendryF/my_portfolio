@@ -2,15 +2,7 @@ import styles from './KingdomOfGreedPage.module.css';
 
 export default function KingdomOfGreedPage() {
     return (
-      <main className="main-content" style={{
-        backgroundImage: "url('/KOGBackground.PNG')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        width: '100%'
-      }}
-       >
+      <main className={styles.background}>
         <h1>Kingdom Of Greed: Unity Dungeon Crawler</h1>
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         {/*Presentation youtube video, to the left side of the screen*/}{/*Animations, to the right side of the screen*/}
