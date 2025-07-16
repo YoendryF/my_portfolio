@@ -2,10 +2,7 @@ import styles from './KingdomOfGreedPage.module.css';
 
 export default function KingdomOfGreedPage() {
     return (
-      <main className="main-content">
-        {/*Background image*/}
-        <div
-      style={{
+      <main className="main-content" style={{
         backgroundImage: "url('/KOGBackground.PNG')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -27,7 +24,6 @@ export default function KingdomOfGreedPage() {
         {/*Concept Drawings, Aseprite sheets*/}
         
         {/*Game download*/}
-      </div>
       </main>
     );
   }
