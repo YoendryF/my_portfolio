@@ -15,7 +15,7 @@
   padding: 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 .Title{
   font-family: 'Press Start 2P', monospace;
