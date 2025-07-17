@@ -22,7 +22,7 @@
   font-family: 'Press Start 2P', monospace;
   color: #e3b341;
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   text-shadow: 
     2px 2px 0 #000, 
     -2px -2px 0 #000, 
@@ -30,6 +30,15 @@
     -2px 2px 0 #000;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.KOGTitleScreen{
+  width: 350px; 
+  margin-left: 1rem; 
+  margin-top: 2rem;
+  border: 6px solid #e3b341; 
+  box-shadow: 0 0 12px #e3b341aa; 
+  border-radius: 8px; 
 }
 
 
