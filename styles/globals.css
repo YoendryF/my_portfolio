@@ -12,6 +12,7 @@ body.override-kingdom,
 body.override-kingdom .portfolio-layout {
   margin: 0 !important;
   padding: 0 !important;
+  left: -30px;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
