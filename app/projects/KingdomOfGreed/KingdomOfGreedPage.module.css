@@ -28,8 +28,6 @@ body .portfolio-layout.override-kingdom {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  left: -300px;
-  position: relative;
 }
 
 .Title{
@@ -56,6 +54,7 @@ body .portfolio-layout.override-kingdom {
   margin: 0;
   padding: 0;
   position: relative;
+  left:-59;
   flex-direction: column;
   display: flex;
   justify-content: center;
