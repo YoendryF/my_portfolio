@@ -8,18 +8,16 @@
 }
 
 /*override KOG CSS*/
-body.override-kingdom,
-body.override-kingdom .portfolio-layout {
-  margin: 0 !important;
-  padding: 0 !important;
-  left: -30px;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.override-kingdom {
+  background-image: url('/KOGBackground.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
 
 
 body {
