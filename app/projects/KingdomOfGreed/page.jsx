@@ -14,6 +14,7 @@ export default function KingdomOfGreedPage() {
       <h1 className="KOGTitle">Kingdom Of Greed: Unity Dungeon Crawler</h1>
     {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         <img src="/TitleScreen.png" alt="Title Screen" className = "KOGTitleScreen"/>
+        <p className="KOGDescription">INSERT PROJECT DESCRIPTION HERE</p>
         {/*Presentation youtube video, to the left side of the screen*/}{/*Animations, to the right side of the screen*/}
 
         {/*Tech Stack, in the middle with list items*/}
