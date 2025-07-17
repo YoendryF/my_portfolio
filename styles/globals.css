@@ -34,12 +34,14 @@
 
 .KOGTitleScreen{
   width: 350px; 
-  margin-left: 1rem; 
+  margin-left: 0.1rem; 
   margin-top: 2rem;
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
   border-radius: 8px; 
 }
+
+/*KOG page CSS*/
 
 
 body {
