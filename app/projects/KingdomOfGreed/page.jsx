@@ -13,6 +13,10 @@ export default function KingdomOfGreedPage() {
     <main className="kingdomMain">
       <h1 className="KOGTitle">Kingdom Of Greed: Unity Dungeon Crawler</h1>
     {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
+      <div className = "KOGTitleScreen">
+        <img src="/TitleScreen.png" alt="Title Screen" />
+
+      </div>
         {/*Presentation youtube video, to the left side of the screen*/}{/*Animations, to the right side of the screen*/}
 
         {/*Tech Stack, in the middle with list items*/}
