@@ -2,7 +2,8 @@ import styles from './KingdomOfGreedPage.module.css';
 
 export default function KingdomOfGreedPage() {
     return (
-      <main className={styles.fullBackground}>
+      <div className ={styles.fullBackground}>
+      <main className={styles.kingdomMain}>
         <div className={styles.pageWrapper}>
         <h1 className={styles.Title}>Kingdom Of Greed: Unity Dungeon Crawler</h1>
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
@@ -19,5 +20,6 @@ export default function KingdomOfGreedPage() {
         {/*Game download*/}
         </div>
       </main>
+      </div>
     );
   }
