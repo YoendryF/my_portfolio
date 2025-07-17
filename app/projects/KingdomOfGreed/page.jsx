@@ -1,12 +1,18 @@
-import styles from './KingdomOfGreedPage.module.css';
+'use client';
+import { useEffect } from 'react';
 
 export default function KingdomOfGreedPage() {
-    return (
-      <div className={styles.pageWrapper}>
-      <div className ={styles.fullBackground}>
-      <main className={styles.kingdomMain}>
-        <h1 className={styles.Title}>Kingdom Of Greed: Unity Dungeon Crawler</h1>
-        {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
+  useEffect(() => {
+    document.body.classList.add('kog-background');
+    return () => {
+      document.body.classList.remove('kog-background');
+    };
+  }, []);
+
+  return (
+    <main className="kingdomMain">
+      <h1 className="Title">Kingdom Of Greed: Unity Dungeon Crawler</h1>
+    {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         {/*Presentation youtube video, to the left side of the screen*/}{/*Animations, to the right side of the screen*/}
 
         {/*Tech Stack, in the middle with list items*/}
@@ -18,8 +24,6 @@ export default function KingdomOfGreedPage() {
         {/*Concept Drawings, Aseprite sheets*/}
         
         {/*Game download*/}
-      </main>
-      </div>
-      </div>
-    );
-  }
+    </main>
+  );
+}
