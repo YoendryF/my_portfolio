@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  position: left;
 }
 .Title{
   font-family: 'Press Start 2P', monospace;
@@ -38,7 +37,7 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: center;
   margin: 0;
   padding: 0;
   display: flex;
