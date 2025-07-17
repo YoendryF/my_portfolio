@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/*override KOG CSS*/
+/*KOG page CSS*/
 .override-kingdom {
   background-image: url('/KOGBackground.PNG');
   background-size: cover;
@@ -18,6 +18,19 @@
   padding: 0;
 }
 
+.KOGTitle{
+  font-family: 'Press Start 2P', monospace;
+  color: #e3b341;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+  letter-spacing: 1px;
+  text-align: center;
+}
 
 
 body {
