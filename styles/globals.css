@@ -37,7 +37,7 @@
   justify-content: center;
   align-items: center;
   gap: 7rem; 
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -60,8 +60,8 @@
 
 
 .ent-left {
-  width: 64px;
-  height: 64px;
+  width: 128px;
+  height: 128px;
   background-image: url('/EntLeft.png');
   background-repeat: no-repeat;
   animation: entLeftAnim 1s steps(8) infinite; 
