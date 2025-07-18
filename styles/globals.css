@@ -32,12 +32,22 @@
   text-align: center;
 }
 
+.KOGAnimationRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem; 
+  margin-bottom: 2rem;
+}
+
+
 .goblin-right {
   width: 160px;
   height: 160px;
   background-image: url('/GoblinRight.png');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   animation: goblinrightAnim 1s steps(5) infinite; 
 }
 @keyframes goblinrightAnim {
@@ -54,8 +64,9 @@
   width: 160px;
   height: 160px;
   background-image: url('/EntLeft.png');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   animation: entLeftAnim 1s steps(8) infinite; /* Adjust frame count and speed */
 }
 @keyframes entLeftAnim {
