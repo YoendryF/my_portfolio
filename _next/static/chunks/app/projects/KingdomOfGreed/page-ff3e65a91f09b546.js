@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[667],{6650:function(e,n,r){Promise.resolve().then(r.bind(r,4251))},4251:function(e,n,r){"use strict";r.r(n),r.d(n,{default:function(){return KingdomOfGreedPage}});var t=r(7437),o=r(2265);function KingdomOfGreedPage(){return(0,o.useEffect)(()=>(document.body.classList.add("kog-background"),()=>{document.body.classList.remove("kog-background")}),[]),(0,t.jsxs)("main",{className:"kingdomMain",children:[(0,t.jsx)("h1",{className:"KOGTitle",children:"Kingdom Of Greed: Unity Dungeon Crawler"})," ",(0,t.jsxs)("div",{className:"KOGIntroSection",children:[(0,t.jsx)("img",{src:"/TitleScreen.png",alt:"Title Screen",className:"KOGTitleScreen"}),(0,t.jsx)("p",{className:"KOGDescription",children:"INSERT PROJECT DESCRIPTION HERE"})]})]})}},622:function(e,n,r){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var t=r(2265),o=Symbol.for("react.element"),s=Symbol.for("react.fragment"),c=Object.prototype.hasOwnProperty,i=t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,a={key:!0,ref:!0,__self:!0,__source:!0};function q(e,n,r){var t,s={},l=null,u=null;for(t in void 0!==r&&(l=""+r),void 0!==n.key&&(l=""+n.key),void 0!==n.ref&&(u=n.ref),n)c.call(n,t)&&!a.hasOwnProperty(t)&&(s[t]=n[t]);if(e&&e.defaultProps)for(t in n=e.defaultProps)void 0===s[t]&&(s[t]=n[t]);return{$$typeof:o,type:e,key:l,ref:u,props:s,_owner:i.current}}n.Fragment=s,n.jsx=q,n.jsxs=q},7437:function(e,n,r){"use strict";e.exports=r(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=6650)}),_N_E=e.O()}]);

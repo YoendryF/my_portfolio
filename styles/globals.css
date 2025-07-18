@@ -41,6 +41,13 @@
   border-radius: 8px; 
 }
 
+.KOGIntroSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; 
+  padding: 2rem;
+}
+
 /*KOG page CSS*/
 
 
