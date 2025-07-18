@@ -13,8 +13,8 @@ export default function KingdomOfGreedPage() {
     <main className="kingdomMain">
       <h1 className="KOGTitle">Kingdom Of Greed: Unity Dungeon Crawler</h1>
         {/*Goblin and ent animations*/}
-        <div className="/GoblinRight.png"/>
-        <div className="/EntLeft.png"/>
+        <div className="/goblin-right"/>
+        <div className="/ent-left"/>
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         <div className="KOGIntroSection">
           <img src="/TitleScreen.png" alt="Title Screen" className = "KOGTitleScreen"/>
