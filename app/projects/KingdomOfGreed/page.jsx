@@ -15,7 +15,12 @@ export default function KingdomOfGreedPage() {
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         <div className="KOGIntroSection">
           <img src="/TitleScreen.png" alt="Title Screen" className = "KOGTitleScreen"/>
-          <p className="KOGDescription">INSERT PROJECT DESCRIPTION HERE</p>
+          <p className="KOGDescription">
+            <strong>Kingdom of Greed</strong> begins with a goblin returning from an adventure, only to discover that his homeland has been overtaken by a tyrannical king.<br />
+            Determined to reclaim what was lost, the goblin embarks on a perilous journey through war-torn kingdoms to confront the ruler.<br />
+            Along the way, he encounters enemies, allies, hidden treasures, and challenging decisions that shape his path.<br />
+            This game was developed as part of a semester-long project for our AI for Game Programming course, in collaboration with Santiago Echeverry, Kathlea Corla, and Elliott D’Amato.<br />
+          </p>
         </div>
         {/*Presentation youtube video, to the left side of the screen*/}{/*Animations, to the right side of the screen*/}
 
@@ -31,10 +36,12 @@ export default function KingdomOfGreedPage() {
         {/*Info on procedurally generated dungeons, to the left side of the screen*/}{/*Dungeon pictures, to the right side of the screen*/}
         <div className="ProGenDungeonsSection">
           <h2 className="ProGenDunTitle">Procedurally Generated Dungeons</h2>
+          <p className="ProGenDunDescription">Individual rooms were designed and enemies were placed within each room at different difficulty levels.<br/> The levels use a DFS-based algorithm to randomly connect the individual rooms and form a level.<br/> Level seeds are available and able to be set at the beginning of the game.</p>
         </div>
         {/*Gameplay Screenshots, to the left side of the screen*/}{/*Decision oriented gameplay description, to the right side of the screen*/}
         <div className="DecisionGameplaySection">
           <h2 className="DecisionGameplayTitle">Decision Oriented Gameplay</h2>
+          <p className="DecisionGameplayDescription">Currently being implemented... Stay tuned!</p>
         </div>
         {/*Concept Drawings, Aseprite sheets*/}
         <div className="KOGDesignSection">

@@ -232,13 +232,13 @@ export default function Home() {
       {
         title: "Fix My City",
         image: "/FixMyCityDash.png",
-        desc: "A full-stack MERN app that lets users report and search for local infrastructure issues.",
+        desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
         link: "/projects/FixMyCity"
       },
       {
         title: "Gashapon Robot",
         image: "/Gashapon.png",
-        desc: "An Arduino-based vending machine that dispenses random capsules using a web-controlled UI.",
+        desc: "An Arduino-based vending machine that dispenses random capsules, displays different facial expressions, and calls out for user engagement at peak interaction times.",
         link: "/projects/Gashapon"
       },
       {
@@ -251,7 +251,7 @@ export default function Home() {
       {
         title: "ChristellePhotography",
         image: "/ChristellePhotography.PNG",
-        desc: "A portfolio website for a photographer, featuring a responsive gallery and contact form.",
+        desc: "A portfolio website for a photographer, featuring a responsive gallery.",
         link: "https://Christellephotography.com"
       },
     ].map((project, idx) => (
