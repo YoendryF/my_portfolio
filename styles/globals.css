@@ -44,6 +44,7 @@
 .goblin-right {
   width: 64px;
   height: 64px;
+  background-size: 500% 100%;
   background-image: url('/GoblinRight.png');
   background-repeat: no-repeat;
   animation: goblinrightAnim 1s steps(5) infinite; 
