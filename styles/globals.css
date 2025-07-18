@@ -38,7 +38,7 @@
   background-image: url('/GoblinRight.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  animation: goblinrightAnim 1s steps(6) infinite; 
+  animation: goblinrightAnim 1s steps(5) infinite; 
 }
 @keyframes goblinrightAnim {
   from {
@@ -50,7 +50,7 @@
 }
 
 
-.Ent-left {
+.ent-left {
   width: 160px;
   height: 160px;
   background-image: url('/EntLeft.png');
