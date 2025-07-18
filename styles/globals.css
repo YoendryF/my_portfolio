@@ -61,8 +61,8 @@
 
 .KOGTechList li {
   position: relative;
-  padding-left: 2rem; 
-  margin-bottom: 1rem;
+  padding-left: 3rem; 
+  margin-bottom: 0.5rem;
   font-size: 1.1rem;
   color: #facc15; 
 }
