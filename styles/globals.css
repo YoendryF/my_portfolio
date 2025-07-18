@@ -82,7 +82,7 @@
 .KOGTitleScreen{
   width: 350px; 
   margin-left: -5rem; 
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
   border-radius: 8px; 
@@ -137,6 +137,16 @@
   color: #facc15;
   text-align: left;
 }
+
+.BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
+  width: 350px;  
+  margin-top: 1rem;
+  border: 6px solid #e3b341; 
+  box-shadow: 0 0 12px #e3b341aa; 
+  border-radius: 8px; 
+  position: right;
+}
+
 
 .DecisionGameplayTitle{
   color: #facc15;

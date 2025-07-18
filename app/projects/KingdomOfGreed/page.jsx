@@ -42,6 +42,9 @@ export default function KingdomOfGreedPage() {
         <div className="ProGenDungeonsSection">
           <h2 className="ProGenDunTitle">Procedurally Generated Dungeons</h2>
           <p className="ProGenDunDescription">Individual rooms were designed and enemies were placed within each room at different difficulty levels.<br/> The levels use a DFS-based algorithm to randomly connect the individual rooms and form a level.<br/> Level seeds are available and able to be set at the beginning of the game.</p>
+          <img src="/DungeonRooms.png" className="DungeonRoomsImg"/>
+          <img src="/BossRoom.png" className="BossRoomImg"/>
+          <img src="/StartRoom.png" className="StartRoomImg"/>
         </div>
         {/*Gameplay Screenshots, to the left side of the screen*/}{/*Decision oriented gameplay description, to the right side of the screen*/}
         <div className="DecisionGameplaySection">
