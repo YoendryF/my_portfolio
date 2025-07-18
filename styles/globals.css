@@ -32,6 +32,44 @@
   text-align: center;
 }
 
+.goblin-right {
+  width: 160px;
+  height: 160px;
+  background-image: url('/GoblinRight.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: goblinAttackAnim 1s steps(6) infinite; 
+}
+@keyframes goblinrightAnim {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -960px 0; 
+  }
+}
+
+
+.Ent-left {
+  width: 160px;
+  height: 160px;
+  background-image: url('/EntLeft.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: goblinAttackAnim 1s steps(8) infinite; /* Adjust frame count and speed */
+}
+@keyframes entLeftAnim {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -960px 0; /* frameWidth * frameCount */
+  }
+}
+
+
+
+
 .KOGTitleScreen{
   width: 350px; 
   margin-left: -5rem; 
@@ -978,7 +1016,7 @@ s
     background-image: url('/my-portfolio/KOGAnimation.png');
     background-repeat: no-repeat;
     background-position: 0 0;
-    animation: spriteAnim 1s steps(6) infinite; /* adjust steps and duration */
+    animation: spriteAnim 1s steps(6) infinite; 
   }
 
   .bio-grid {
