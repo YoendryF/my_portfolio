@@ -1,5 +1,5 @@
-1:HL["/_next/static/css/7f7a217a64ca3c86.css","style",{"crossOrigin":""}]
-0:["tEXRi5qLHGT0ogA_e0mHC",[[["",{"children":["projects",{"children":["FutureFund",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7f7a217a64ca3c86.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/_next/static/css/6652c453a99fed2e.css","style",{"crossOrigin":""}]
+0:["43QIpME8Ag2xToPTWeJeq",[[["",{"children":["projects",{"children":["FutureFund",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6652c453a99fed2e.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[2222,["185","static/chunks/app/layout-80c4926b7c908562.js"],""]
 5:I[6954,[],""]
 6:I[7264,[],""]
