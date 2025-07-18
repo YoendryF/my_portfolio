@@ -38,7 +38,7 @@
   background-image: url('/GoblinRight.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  animation: goblinAttackAnim 1s steps(6) infinite; 
+  animation: goblinrightAnim 1s steps(6) infinite; 
 }
 @keyframes goblinrightAnim {
   from {
@@ -56,7 +56,7 @@
   background-image: url('/EntLeft.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  animation: goblinAttackAnim 1s steps(8) infinite; /* Adjust frame count and speed */
+  animation: entLeftAnim 1s steps(8) infinite; /* Adjust frame count and speed */
 }
 @keyframes entLeftAnim {
   from {
