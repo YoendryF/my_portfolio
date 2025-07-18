@@ -1,6 +1,6 @@
 1:HL["/_next/static/css/29c2aa7a83dbe77c.css","style",{"crossOrigin":""}]
-0:["ESqSC00V2lsmv4ONWRpDD",[[["",{"children":["projects",{"children":["KingdomOfGreed",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/29c2aa7a83dbe77c.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
-4:I[2222,["185","static/chunks/app/layout-172cb795fb63f8ec.js"],""]
+0:["FS0fSWFyffkYhoJHr9Jxf",[[["",{"children":["projects",{"children":["KingdomOfGreed",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/29c2aa7a83dbe77c.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[2222,["185","static/chunks/app/layout-0e94eed7acc36d64.js"],""]
 5:I[6954,[],""]
 6:I[7264,[],""]
 8:I[8297,[],""]

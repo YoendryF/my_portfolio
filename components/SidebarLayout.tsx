@@ -40,7 +40,7 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
         </button>
 
       <aside className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <img src="/YoendryProfile.JPG" alt="Profile" className="profile-img" />
+        <img src="/YoendryProfile2.JPG" alt="Profile" className="profile-img" />
         <h2>Yoendry Ferro Santizo</h2>
         <p>Hi, I’m Yoendry, an aspiring software engineer. Welcome to my website</p>
         <div className="nav-links">
