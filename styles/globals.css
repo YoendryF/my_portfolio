@@ -107,19 +107,34 @@
 }
 
 .KOGDescription{
-  color: #343f11;
+  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
+  background-size: 400% 400%;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
 }
 
 .ProGenDunDescription{
-  color: #343f11;
+  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
+  background-size: 400% 400%;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
 }
 
 .DecisionGameplayDescription{
-  color: #343f11;
+  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
+  background-size: 400% 400%;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
 }
 
 .GameDemoDescritpion{
-  background: linear-gradient(270deg, #343f11, gold, #343f11);
+  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
   background-size: 400% 400%;
   background-clip:text;
   -webkit-background-clip: text;
