@@ -133,18 +133,24 @@
   background-repeat: no-repeat;
 }
 
+.ProGenDungeonsSection{
+  display: flex;
+}
+
 .ProGenDunTitle{
   color: #facc15;
   text-align: left;
 }
 
 .BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
-  width: 350px;  
+  width: 200px;  
+  height: 200px;
   margin-top: 1rem;
+  margin-left: auto;
+  display: block;
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
   border-radius: 8px; 
-  position: right;
 }
 
 
