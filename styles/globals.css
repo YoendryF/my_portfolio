@@ -71,7 +71,8 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 0.1rem;
+  top: 50%;
+  transform: translateY(-50%);
   width: 4.5rem;
   height: 4.5rem;
   top: 0.2rem;
