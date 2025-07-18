@@ -117,7 +117,7 @@ export default function Home() {
         title: "SHPE Pro Dev Committee",
         role: "Active Member",
         image: "/ProDev.png",
-        desc: "Participated in the Professional Development Committee, supporting career development by critiquing resumes, interview responses, and elevator pitches"
+        desc: "Participated in the Professional Development Committee, supporting career development by critiquing resumes, interview responses, and elevator pitches."
       },
       {
         title: "SHPE Tech Committee",
