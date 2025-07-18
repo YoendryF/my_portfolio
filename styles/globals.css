@@ -294,7 +294,7 @@ footer {
   .profile-img {
     height: 120px;
     width: 120px;
-    border-radius: 50%;
+    border-radius: 16px;
     object-fit: cover;
     margin-bottom: 1rem;
     border: 3px solid #cbd5e1;
