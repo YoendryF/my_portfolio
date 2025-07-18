@@ -86,6 +86,26 @@
   background-repeat: no-repeat;
 }
 
+.ProGenDunTitle{
+  color: #facc15;
+  text-align: left;
+}
+
+.DecisionGameplayTitle{
+  color: #facc15;
+  text-align: right;
+}
+
+.KOGDesignTitle{
+  color: #facc15;
+  text-align: left;
+}
+
+.GameDemoTitle{
+  color: #facc15;
+  text-align: center;
+}
+
 
 /*KOG page CSS*/
 
