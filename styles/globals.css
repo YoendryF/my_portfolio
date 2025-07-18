@@ -42,12 +42,10 @@
 
 
 .goblin-right {
-  width: 160px;
-  height: 160px;
+  width: 64x;
+  height: 64px;
   background-image: url('/GoblinRight.png');
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   animation: goblinrightAnim 1s steps(5) infinite; 
 }
 @keyframes goblinrightAnim {
@@ -61,20 +59,18 @@
 
 
 .ent-left {
-  width: 160px;
-  height: 160px;
+  width: 64px;
+  height: 64px;
   background-image: url('/EntLeft.png');
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  animation: entLeftAnim 1s steps(8) infinite; /* Adjust frame count and speed */
+  animation: entLeftAnim 1s steps(8) infinite; 
 }
 @keyframes entLeftAnim {
   from {
     background-position: 0 0;
   }
   to {
-    background-position: -320px 0; 
+    background-position: -512px 0; 
   }
 }
 
