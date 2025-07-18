@@ -48,6 +48,11 @@
   padding: 2rem;
 }
 
+.KOGTechTitle{
+  color: #facc15;
+  text-align: center;
+}
+
 .KOGTechList {
   list-style: none; 
   display: flex;
