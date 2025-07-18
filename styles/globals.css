@@ -107,7 +107,19 @@
 }
 
 .KOGDescription{
-  color: darkgreen;
+  color: #343f11;
+}
+
+.ProGenDunDescription{
+  color: #343f11;
+}
+
+.DecisionGameplayDescription{
+  color: #343f11;
+}
+
+.GameDemoDescritpion{
+  color: #343f11;
 }
 
 

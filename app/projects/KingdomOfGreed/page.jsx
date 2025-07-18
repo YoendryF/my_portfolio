@@ -50,7 +50,7 @@ export default function KingdomOfGreedPage() {
         {/*Game download*/}
         <div className="GameDownloadSection">
           <h2 className="GameDemoTitle">Game Demo</h2>
-          <p>Wanna test the game out yourself? Demo version of the game is available to play test:</p>
+          <p className="GameDemoDescritpion">Wanna test the game out yourself? Demo version of the game is available to play test:</p>
         </div>
     </main>
   );
