@@ -52,8 +52,18 @@ export default function KingdomOfGreedPage() {
           <p className="DecisionGameplayDescription">Currently being implemented... Stay tuned!</p>
         </div>
         {/*Concept Drawings, Aseprite sheets*/}
+        <h2 className="KOGDesignTitle">Element Design</h2>
         <div className="KOGDesignSection">
-          <h2 className="KOGDesignTitle">Element Design</h2>
+          <img src= "/GoblinConcept1.png" className="KOGDesignimages"/>
+          <img src= "/GoblinConcept2.png" className="KOGDesignimages"/>
+          <img src= "/GoblinConcept3.png" className="KOGDesignimages"/>
+          <img src= "/EntConcept1.png" className="KOGDesignimages"/>
+          <img src= "/EntBossConcept1.png" className="KOGDesignimages"/>
+          <img src= "/EntBoss.png" className="KOGDesignimages"/>
+          <img src= "/LeshenFrontSprite.png" className="KOGDesignimages"/>
+          <img src= "/Weapon1.png" className="KOGDesignimages"/>
+          <img src= "/Weapon2.png" className="KOGDesignimages"/>
+          <img src= "/Weapon3.png" className="KOGDesignimages"/>
         </div>
         {/*Game download*/}
         <div className="GameDownloadSection">

@@ -80,8 +80,7 @@
 
 
 .KOGTitleScreen{
-  width: 350px; 
-  margin-left: -5rem; 
+  width: 350px;  
   margin-top: 1rem;
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
@@ -194,6 +193,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 6s ease infinite;
+}
+
+.KOGDesingSection{
+  display: flex;
+}
+
+.KOGDesignImages{
+  width: 100px;  
+  height: 100px;
+  margin-top: 1rem;
+  margin-left: auto;
+  display: block;
+  border: 6px solid #e3b341; 
+  box-shadow: 0 0 12px #e3b341aa; 
+  border-radius: 8px;
 }
 
 .GameDemoDescritpion{
