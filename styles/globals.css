@@ -141,6 +141,12 @@
   text-align: left;
 }
 
+.DungeonImagesContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
   width: 200px;  
   height: 200px;
@@ -150,6 +156,12 @@
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
   border-radius: 8px; 
+}
+@media (max-width: 768px) {
+  .DungeonImagesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
