@@ -41,7 +41,7 @@ export default function KingdomOfGreedPage() {
         {/*Info on procedurally generated dungeons, to the left side of the screen*/}{/*Dungeon pictures, to the right side of the screen*/}
         <h2 className="ProGenDunTitle">Procedurally Generated Dungeons</h2>
         <div className="ProGenDungeonsSection">
-          <p className="ProGenDunDescription">Individual rooms were designed and enemies were placed within each room at different difficulty levels.<br/> The levels use a DFS-based algorithm to randomly connect the individual rooms and form a level.<br/> Level seeds are available and able to be set at the beginning of the game.</p>
+          <p className="ProGenDunDescription">Elliot created individual rooms where enemies were placed within each room at different difficulty levels.<br/> The levels use a DFS-based algorithm to randomly connect the individual rooms and form a level.<br/> Level seeds are available and able to be set at the beginning of the game.</p>
           <img src="/DungeonRooms.png" className="DungeonRoomsImg"/>
           <img src="/BossRoom.png" className="BossRoomImg"/>
           <img src="/StartRoom.png" className="StartRoomImg"/>
@@ -54,13 +54,19 @@ export default function KingdomOfGreedPage() {
         {/*Concept Drawings, Aseprite sheets*/}
         <h2 className="KOGDesignTitle">Element Design</h2>
         <div className="KOGDesignSection">
+          <p className="KOGDesignDescription">
+            All characters featured in the game are original designs.<br/>
+            I began by creating initial sketches in Procreate to establish the concept for each character or element.<br/>
+            Once satisfied with a design, I transferred the artwork to Aseprite, using the color match tool to replicate exact pixel shades.<br/>
+            From the still image, I created frame-by-frame animations, which were then exported as sprite sheets.<br/>
+            These were later imported into Unity, where Kathlea reanimated them using Unity's Animator system.
+          </p>
           <img src= "/GoblinConcept1.png" className="KOGDesignImages"/>
           <img src= "/GoblinConcept2.png" className="KOGDesignImages"/>
           <img src= "/GoblinConcept3.png" className="KOGDesignImages"/>
           <img src= "/EntConcept1.png" className="KOGDesignImages"/>
           <img src= "/EntBossConcept1.png" className="KOGDesignImages"/>
           <img src= "/EntBoss.png" className="KOGDesignImages"/>
-          <img src= "/LeshenFrontSprite.png" className="KOGDesignImages"/>
           <img src= "/Weapon1.png" className="KOGDesignImages"/>
           <img src= "/Weapon2.png" className="KOGDesignImages"/>
           <img src= "/Weapon3.png" className="KOGDesignImages"/>

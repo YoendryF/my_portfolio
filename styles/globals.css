@@ -168,25 +168,7 @@
   text-align: center;
 }
 
-.KOGDescription{
-  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
-  background-size: 400% 400%;
-  background-clip:text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 6s ease infinite;
-}
-
-.ProGenDunDescription{
-  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
-  background-size: 400% 400%;
-  background-clip:text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 6s ease infinite;
-}
-
-.DecisionGameplayDescription{
+.KOGDescription, .KOGDesignDescription, .ProGenDunDescription, .DecisionGameplayDescription{
   background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
   background-size: 400% 400%;
   background-clip:text;
