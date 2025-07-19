@@ -160,7 +160,7 @@
 @media (max-width: 768px) {
   .DungeonImagesContainer {
     flex-direction: column;
-    align-items: center;
+    align-items: right;
   }
 }
 
