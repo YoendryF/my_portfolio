@@ -177,22 +177,38 @@
   animation: gradientShift 6s ease infinite;
 }
 
-.KOGDesingSection{
+.KOGDesignSection {
   display: flex;
-  flex-direction: row; 
-  gap: 1rem; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
-.KOGDesignImages{
-  width: 100px;  
+.KOGDesignText {
+  flex: 1;
+  min-width: 300px;
+  color: #b5b54d; 
+}
+
+.KOGDesignImagesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+}
+
+.KOGDesignImages {
+  width: 100px;
   height: 100px;
-  margin-top: 1rem;
-  margin-left: auto;
-  border: 6px solid #e3b341; 
-  box-shadow: 0 0 12px #e3b341aa; 
+  border: 6px solid #e3b341;
+  box-shadow: 0 0 12px #e3b341aa;
   border-radius: 8px;
 }
+
 
 .GameDemoDescritpion{
   background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);

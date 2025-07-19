@@ -54,6 +54,7 @@ export default function KingdomOfGreedPage() {
         {/*Concept Drawings, Aseprite sheets*/}
         <h2 className="KOGDesignTitle">Element Design</h2>
         <div className="KOGDesignSection">
+        <div className="KOGDesignText">
           <p className="KOGDesignDescription">
             All characters featured in the game are original designs.<br/>
             I began by creating initial sketches in Procreate to establish the concept for each character or element.<br/>
@@ -61,15 +62,18 @@ export default function KingdomOfGreedPage() {
             From the still image, I created frame-by-frame animations, which were then exported as sprite sheets.<br/>
             These were later imported into Unity, where Kathlea reanimated them using Unity's Animator system.
           </p>
-          <img src= "/GoblinConcept1.png" className="KOGDesignImages"/>
-          <img src= "/GoblinConcept2.png" className="KOGDesignImages"/>
-          <img src= "/GoblinConcept3.png" className="KOGDesignImages"/>
-          <img src= "/EntConcept1.png" className="KOGDesignImages"/>
-          <img src= "/EntBossConcept1.png" className="KOGDesignImages"/>
-          <img src= "/EntBoss.png" className="KOGDesignImages"/>
-          <img src= "/Weapon1.png" className="KOGDesignImages"/>
-          <img src= "/Weapon2.png" className="KOGDesignImages"/>
-          <img src= "/Weapon3.png" className="KOGDesignImages"/>
+        </div>
+        <div className="KOGDesignImagesGrid">
+          <img src="/GoblinConcept1.png" className="KOGDesignImages" />
+          <img src="/GoblinConcept2.png" className="KOGDesignImages" />
+          <img src="/GoblinConcept3.png" className="KOGDesignImages" />
+          <img src="/EntConcept1.png" className="KOGDesignImages" />
+          <img src="/EntBossConcept1.png" className="KOGDesignImages" />
+          <img src="/EntBoss.png" className="KOGDesignImages" />
+          <img src="/Weapon1.png" className="KOGDesignImages" />
+          <img src="/Weapon2.png" className="KOGDesignImages" />
+          <img src="/Weapon3.png" className="KOGDesignImages" />
+        </div>
         </div>
         {/*Game download*/}
         <div className="GameDownloadSection">
