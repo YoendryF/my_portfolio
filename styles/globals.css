@@ -197,6 +197,9 @@
 
 .KOGDesingSection{
   display: flex;
+  flex-direction: row; 
+  gap: 1rem; 
+  flex-wrap: wrap;
 }
 
 .KOGDesignImages{
@@ -204,7 +207,6 @@
   height: 100px;
   margin-top: 1rem;
   margin-left: auto;
-  display: block;
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
   border-radius: 8px;
