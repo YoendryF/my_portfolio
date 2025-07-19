@@ -134,6 +134,7 @@
 
 .ProGenDungeonsSection{
   display: flex;
+  gap: 2rem;
 }
 
 .ProGenDunTitle{
