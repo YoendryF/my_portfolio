@@ -54,16 +54,16 @@ export default function KingdomOfGreedPage() {
         {/*Concept Drawings, Aseprite sheets*/}
         <h2 className="KOGDesignTitle">Element Design</h2>
         <div className="KOGDesignSection">
-          <img src= "/GoblinConcept1.png" className="KOGDesignimages"/>
-          <img src= "/GoblinConcept2.png" className="KOGDesignimages"/>
-          <img src= "/GoblinConcept3.png" className="KOGDesignimages"/>
-          <img src= "/EntConcept1.png" className="KOGDesignimages"/>
-          <img src= "/EntBossConcept1.png" className="KOGDesignimages"/>
-          <img src= "/EntBoss.png" className="KOGDesignimages"/>
-          <img src= "/LeshenFrontSprite.png" className="KOGDesignimages"/>
-          <img src= "/Weapon1.png" className="KOGDesignimages"/>
-          <img src= "/Weapon2.png" className="KOGDesignimages"/>
-          <img src= "/Weapon3.png" className="KOGDesignimages"/>
+          <img src= "/GoblinConcept1.png" className="KOGDesignImages"/>
+          <img src= "/GoblinConcept2.png" className="KOGDesignImages"/>
+          <img src= "/GoblinConcept3.png" className="KOGDesignImages"/>
+          <img src= "/EntConcept1.png" className="KOGDesignImages"/>
+          <img src= "/EntBossConcept1.png" className="KOGDesignImages"/>
+          <img src= "/EntBoss.png" className="KOGDesignImages"/>
+          <img src= "/LeshenFrontSprite.png" className="KOGDesignImages"/>
+          <img src= "/Weapon1.png" className="KOGDesignImages"/>
+          <img src= "/Weapon2.png" className="KOGDesignImages"/>
+          <img src= "/Weapon3.png" className="KOGDesignImages"/>
         </div>
         {/*Game download*/}
         <div className="GameDownloadSection">
