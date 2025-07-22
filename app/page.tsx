@@ -26,10 +26,10 @@ export default function Home() {
           <h3>Resume</h3>
           <p>You can view or download my resume for an overview of my experience, skills, and projects.</p>
           <div className="actions" style={{ justifyContent: "center", marginTop: "1rem" }}>
-            <a href="/Resume_yf.pdf" target="_blank" rel="noopener noreferrer" className="btn dark">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn dark">
               View Resume
             </a>
-            <a href="/Resume_yf.pdf" download className="btn green">
+            <a href="/Resume.pdf" download className="btn green">
               Download Resume
             </a>
           </div>
