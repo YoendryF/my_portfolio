@@ -19,7 +19,7 @@ export default function KingdomOfGreedPage() {
         </div>
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         <div className="KOGIntroSection">
-          <div className={styles.videoContainer}>
+          <div className="KOGYoutube">
             <iframe
               width="560"
               height="315"
