@@ -21,8 +21,8 @@ export default function KingdomOfGreedPage() {
         <div className="KOGIntroSection">
           <div className="KOGYoutube">
             <iframe
-              width="560"
-              height="315"
+              width="300"
+              height="300"
               src="https://youtu.be/omh0o22cYEQ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
