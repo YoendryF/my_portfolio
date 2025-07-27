@@ -16,7 +16,7 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  padding-right: 30rem;
+  padding-right: 15rem;
 }
 
 .KOGTitle{
@@ -183,12 +183,12 @@
   -webkit-text-fill-color: transparent;
   animation: gradientShift 6s ease infinite;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: flex-start;
   flex-wrap: wrap;
   flex: 2;
   min-width: 150px;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
