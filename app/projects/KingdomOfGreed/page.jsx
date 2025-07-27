@@ -23,7 +23,7 @@ export default function KingdomOfGreedPage() {
             <iframe
               width="300"
               height="300"
-              src="https://youtu.be/omh0o22cYEQ"
+              src="https://www.youtube.com/embed/omh0o22cYEQ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
