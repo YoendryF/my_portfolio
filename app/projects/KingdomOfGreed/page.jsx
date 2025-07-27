@@ -19,16 +19,18 @@ export default function KingdomOfGreedPage() {
         </div>
         {/*Title Screen, to the left side of the screen*/} {/*Intro Paragraph, to the right side of the screen*/}
         <div className="KOGIntroSection">
-          <img src="/TitleScreen.png" alt="Title Screen" className = "KOGTitleScreen"/>
-          <div className="KOGYoutube">
-            <iframe
-              width="300"
-              height="300"
-              src="https://www.youtube.com/embed/omh0o22cYEQ"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div>
+            <img src="/TitleScreen.png" alt="Title Screen" className = "KOGTitleScreen"/>
+            <div className="KOGYoutube">
+              <iframe
+                width="300"
+                height="300"
+                src="https://www.youtube.com/embed/omh0o22cYEQ"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <p className="KOGDescription">
             <strong>Kingdom of Greed</strong> begins with a goblin returning from an adventure, only to discover that his homeland has been overtaken by a tyrannical king.<br />
