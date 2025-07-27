@@ -57,7 +57,6 @@ export default function KingdomOfGreedPage() {
           <div className="DungeonImagesContainer">
             <img src="/DungeonRooms.png" className="DungeonRoomsImg"/>
             <img src="/BossRoom.png" className="BossRoomImg"/>
-            <img src="/StartRoom.png" className="StartRoomImg"/>
           </div>
         </div>
         {/*Gameplay Screenshots, to the left side of the screen*/}{/*Decision oriented gameplay description, to the right side of the screen*/}
