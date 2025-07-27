@@ -192,10 +192,10 @@
 }
 
 .BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
-  width: 200px;  
-  height: 200px;
+  width: 190px;  
+  height: 190px;
   margin-top: 1rem;
-  margin-left: auto;
+  margin-left: 1rem;
   display: block;
   border: 6px solid #e3b341; 
   box-shadow: 0 0 12px #e3b341aa; 
