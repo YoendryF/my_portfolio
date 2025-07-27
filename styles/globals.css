@@ -186,6 +186,9 @@
   gap: 2rem;
   align-items: flex-start;
   flex-wrap: wrap;
+  flex: 2;
+  min-width: 300px;
+  max-width: 600px;
 }
 
 .BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
