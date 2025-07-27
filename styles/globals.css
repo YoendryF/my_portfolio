@@ -283,17 +283,19 @@
 }
 
 .goblin-download {
-  width: 64px;
-  height: 64px;
+  width: 128px;
+  height: 128px;
   background-image: url('/Celebrate.png'); 
   background-size: 500% 100%; 
   background-repeat: no-repeat;
   background-position: 0 0;
+  margin: 1rem auto;
+  display: block;
   cursor: pointer;
 }
 .goblin-download:hover {
   filter: brightness(1.2);
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: transform 0.2s ease;
 }
 .goblin-download.animate {
@@ -304,7 +306,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: -320px 0; 
+    background-position: -640px 0; 
   }
 }
 

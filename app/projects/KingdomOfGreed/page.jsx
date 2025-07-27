@@ -101,9 +101,11 @@ export default function KingdomOfGreedPage() {
         <div className="GameDownloadSection">
           <h2 className="GameDemoTitle">Game Demo</h2>
           <p className="GameDemoDescritpion">Wanna test the game out yourself? Demo version of the game is available to play test:</p>
-          <a href="/KOGDemo.zip" download onClick={() => triggerAnimation()}>
-            <div className="goblin-download"></div>
-          </a>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <a href="/KOGDemo.zip" download onClick={() => triggerAnimation()}>
+              <div className="goblin-download"></div>
+            </a>
+          </div>
         </div>
     </main>
   );
