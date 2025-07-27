@@ -282,6 +282,32 @@
   100% { background-position: 0% 50%; }
 }
 
+.goblin-download {
+  width: 64px;
+  height: 64px;
+  background-image: url('/Celebrate.png'); 
+  background-size: 500% 100%; 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+.goblin-download:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+.goblin-download.animate {
+  animation: goblinClickAnim 1s steps(5) forwards;
+}
+@keyframes goblinClickAnim {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -320px 0; 
+  }
+}
+
 
 /*KOG page CSS*/
 

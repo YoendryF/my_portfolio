@@ -9,6 +9,15 @@ export default function KingdomOfGreedPage() {
     };
   }, []);
 
+  function triggerAnimation() {
+  const goblin = document.querySelector('.goblin-download');
+  goblin.classList.add('animate');
+  setTimeout(() => {
+    goblin.classList.remove('animate');
+  }, 1000); 
+}
+
+
   return (
     <main className="kingdomMain">
       <h1 className="KOGTitle">Kingdom Of Greed: Unity Dungeon Crawler</h1>
@@ -92,6 +101,9 @@ export default function KingdomOfGreedPage() {
         <div className="GameDownloadSection">
           <h2 className="GameDemoTitle">Game Demo</h2>
           <p className="GameDemoDescritpion">Wanna test the game out yourself? Demo version of the game is available to play test:</p>
+          <a href="/KOGDemo.zip" download onClick={() => triggerAnimation()}>
+            <div className="goblin-download"></div>
+          </a>
         </div>
     </main>
   );
