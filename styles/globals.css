@@ -175,6 +175,19 @@
   justify-content: center;
 }
 
+.ProGenDunDescription{
+  background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
+  background-size: 400% 400%;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 .BossRoomImg, .StartRoomImg, .DungeonRoomsImg{
   width: 200px;  
   height: 200px;
@@ -209,7 +222,7 @@
   text-align: center;
 }
 
-.KOGDescription, .KOGDesignDescription, .ProGenDunDescription, .DecisionGameplayDescription{
+.KOGDescription, .KOGDesignDescription, .DecisionGameplayDescription{
   background: linear-gradient(270deg, #343f11, rgb(151, 132, 20), #343f11);
   background-size: 400% 400%;
   background-clip:text;
