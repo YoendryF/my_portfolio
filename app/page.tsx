@@ -233,7 +233,7 @@ export default function Home() {
         title: "Fix My City",
         image: "/FixMyCityDash.png",
         desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
-        link: "/projects/FixMyCity"
+        link: "/FixMyCity"
       },
       {
         title: "Gashapon Robot",
