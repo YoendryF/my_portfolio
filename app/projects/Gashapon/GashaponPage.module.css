@@ -114,20 +114,20 @@
 
 .leftArm {
   left: -185px;
+  transform: translateY(-50%);
+  transform-origin: top right;
 }
 .leftArm:hover{
   transform: scale(1.00) rotate(15deg);
-  transform: translateY(-50%);
-  transform-origin: top right;
 }
 
 .rightArm {
   right: -185px;
+  transform: translateY(-50%);
+  transform-origin: top left;
 }
 .rightArm:hover{
   transform: scale(1.00) rotate(-15deg);
-  transform: translateY(-50%);
-  transform-origin: top left;
 }
 
 .leftArm a,
