@@ -116,14 +116,14 @@
   left: -185px;
 }
 .leftArm:hover{
-  transform: scale(1.05) rotate(15deg);
+  transform: scale(1.00) rotate(15deg);
 }
 
 .rightArm {
   right: -185px;
 }
 .rightArm:hover{
-  transform: scale(1.05) rotate(-15deg);
+  transform: scale(1.00) rotate(-15deg);
 }
 
 .leftArm a,
