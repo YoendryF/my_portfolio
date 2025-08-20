@@ -50,6 +50,12 @@
   font-size: 2.5rem;
   color: #000000;
   margin-top: 1rem;
+  border: 3px, solid #777777;
+  background-color: #d3d0d0;
+  border-radius: 0 0 15px 15px;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #333;
+  border-right: 3px solid #333;
 }
 
 .techList {
