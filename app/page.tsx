@@ -254,6 +254,11 @@ export default function Home() {
         desc: "A portfolio website for a photographer, featuring a responsive gallery.",
         link: "https://Christellephotography.com"
       },
+      {
+        title: "ShadeSmith",
+        image: "/ShadeSmithLogo.png",
+        desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
+      },
     ].map((project, idx) => (
       <div className="project-card" key={idx}>
         <img src={project.image} alt={project.title} />
