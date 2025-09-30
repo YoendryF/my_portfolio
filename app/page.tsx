@@ -258,6 +258,7 @@ export default function Home() {
         title: "ShadeSmith",
         image: "/ShadeSmithLogo.png",
         desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
+        link: "https://devpost.com/software/shadesmith"
       },
     ].map((project, idx) => (
       <div className="project-card" key={idx}>
