@@ -150,7 +150,14 @@ export default function Home() {
         image: "/ShellHacksImage.png",
         desc: "Collaborated with my SHPE mentees to develop Future Fund, a personal finance web app. Attended presentations and tech talks from leading companies on industry tools, technologies, and success strategies. The weekend-long hackathon strengthened my skills in time management, leadership, and cross-functional teamwork.",
         link: "https://shellhacks.net/"
-      }
+      },
+      {
+        title: "Shellhacks 2025",
+        role: "Participant",
+        image: "/ShellHacksImage.png",
+        desc: "Developed ShadeSmith, an AI-powered color recipe app, over the course of 36 hours with a team of fellow students. Leveraged Flutter, Dart, Python, Firebase, and Google Cloud to create a functional prototype that scans real-world colors and generates paint mixing recipes from a user’s inventory. Gained experience in cloud-based AI services, backend integration, and fast-paced collaboration under hackathon conditions.",
+        link: "https://shellhacks.net/"
+      },
     ].map((exp, idx) => (
       <div className="experience-card section-card" key={idx}>
         <img src={exp.image} alt={exp.title} />
