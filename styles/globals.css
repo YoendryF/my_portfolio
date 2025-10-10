@@ -952,12 +952,6 @@ footer {
     }
   }
 
-  .projects-section {
-  transform: none !important;
-  box-shadow: none !important;
-  }
-
-
   
   .project-card {
     background: rgba(30, 41, 59, 0.9);
