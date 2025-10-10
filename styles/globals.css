@@ -952,10 +952,11 @@ footer {
     }
   }
 
-  .projects-section:hover {
-    transform: none;
-    box-shadow: none;
+  .projects-section {
+  transform: none !important;
+  box-shadow: none !important;
   }
+
 
   
   .project-card {
