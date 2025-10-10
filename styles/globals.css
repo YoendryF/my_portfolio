@@ -809,7 +809,7 @@ footer {
 
   .intro-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), rgba(121, 111, 230, 0.15);
   }
   
   .intro-card h1 {
