@@ -1045,7 +1045,7 @@ footer {
   }
   
   .project-card p {
-    color: #cbd5e1;
+    color: rgb(31, 115, 219);
     font-size: 0.95rem;
   }
   .contact-links {
@@ -1140,7 +1140,7 @@ footer {
     background: #c7d2fe;
   }
   .education-card {
-    background: white;
+    background: #2a60ce;
     padding: 2.5rem;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
