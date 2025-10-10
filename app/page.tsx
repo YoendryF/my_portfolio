@@ -268,7 +268,7 @@ export default function Home() {
         link: "https://devpost.com/software/shadesmith"
       },
     ].map((project, idx) => (
-      <div className="project-card" key={idx}>
+      <div className="project-card" key={idx} style={{ animationDelay: `${idx * 0.1}s` }}>
         <img src={project.image} alt={project.title} />
         <div>
           <h4>{project.title}</h4>
