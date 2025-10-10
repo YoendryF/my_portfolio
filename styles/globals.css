@@ -530,33 +530,6 @@ footer {
   }
 
   
-  .project-card {
-    background: white;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .project-card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-  }
-  
-  .project-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-  }
-  
-  .project-card > div {
-    padding: 1rem;
-    width: 100%;
-  }
 
 /* Portfolio Layout */
 .portfolio-layout {
