@@ -321,7 +321,7 @@ export default function Home() {
     </div>
     <div className="bio-photos">
       <img src="/Iguana.jpg" alt="picture" />
-      <p>My favorite painting i've made</p>
+      <p>My favorite painting i've made.</p>
       <img src="/KneeBoarding.jpg" alt="picture" />
       <p>Knee boarding in Key Largo</p>
       <img src="/Grad.JPG" alt="picture" />
