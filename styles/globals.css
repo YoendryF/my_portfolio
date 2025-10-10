@@ -389,7 +389,7 @@ main {
 }
 
 section {
-  background: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(to top, #536f9a, #ffffff);
   backdrop-filter: blur(10px);
   padding: 3rem;
   border-radius: 20px;
@@ -1175,7 +1175,7 @@ footer {
   }
   
   .skill-chip {
-    background: linear-gradient(to top, #536f9a, #ffffff);
+    background: #e0e7ff;
     color: #1e3a8a;
     padding: 0.5rem 1rem;
     border-radius: 999px;
