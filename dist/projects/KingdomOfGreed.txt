@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/dd270760ca095492.css","style",{"crossOrigin":""}]
-0:["s_xMN-cyaONuw8g_RlC0C",[[["",{"children":["projects",{"children":["KingdomOfGreed",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/dd270760ca095492.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["Bpvgbz90eT8J-G3o6OMys",[[["",{"children":["projects",{"children":["KingdomOfGreed",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/dd270760ca095492.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[2222,["185","static/chunks/app/layout-9b939da1d9c406e8.js"],""]
 5:I[6954,[],""]
 6:I[7264,[],""]
