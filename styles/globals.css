@@ -1175,7 +1175,7 @@ footer {
   }
   
   .skill-chip {
-    background: #e0e7ff;
+    background: linear-gradient(to top, #536f9a, #ffffff);
     color: #1e3a8a;
     padding: 0.5rem 1rem;
     border-radius: 999px;
