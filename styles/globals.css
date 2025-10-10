@@ -966,7 +966,7 @@ footer {
   }
   
   .project-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
   }
 
   .project-card img {
