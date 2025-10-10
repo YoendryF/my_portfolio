@@ -549,7 +549,7 @@ footer {
     align-items: center;
     gap: 1.5rem;
     text-align: center;   
-    max-height: 100vh; 
+    height: 100vh; 
     overflow-y: auto;
   }
   
@@ -1236,7 +1236,6 @@ s
     background-color: #1e293b;
     transition: left 0.3s ease-in-out;
     z-index: 998;
-    max-height: 100vh;
     overflow-y: auto;
   }
 
