@@ -958,7 +958,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(121, 111, 230, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -967,10 +967,8 @@ footer {
   
   .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(121, 111, 230, 0.15);
-    border-color: rgba(121, 111, 230, 0.15);
   }
-  
+
   .project-card img {
     display: block;
     width: 100%;
