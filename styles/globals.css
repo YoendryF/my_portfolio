@@ -419,33 +419,6 @@ section:hover {
   transform: scale(1.06);
 }
 
-/* ---------- 5. Projects grid ---------- */
-.projects-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-@media (min-width: 640px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 960px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.project-card {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;   
-}
-.project-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-}
 
 /* ---------- 6. Contact links ---------- */
 .contact-links {
@@ -967,7 +940,7 @@ footer {
     outline: none;
   }
   
-
+/*PROJECTS SECTION*/
   .projects-section {
     background: linear-gradient(to top, #536f9a, #ffffff);
     max-width: 720px;
