@@ -100,7 +100,9 @@ export default function Home() {
       "Linux/Unix",
       "Docker",
       "RabbitMQ",
-      "Unity"
+      "Unity",
+      "Figma",
+      "Flutter",
     ].map((skill, idx) => (
       <span key={idx} className="skill-chip">
         {skill}
