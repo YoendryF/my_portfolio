@@ -166,6 +166,13 @@ export default function Home() {
         desc: "Developed ShadeSmith, an AI-powered color recipe app, over the course of 36 hours with a team of fellow students. Leveraged Flutter, Dart, Python, Firebase, and Google Cloud to create a functional prototype that scans real-world colors and generates paint mixing recipes from a user’s inventory. Gained experience in cloud-based AI services, backend integration, and fast-paced collaboration under hackathon conditions.",
         link: "https://shellhacks.net/"
       },
+      {
+        title: "SHPE 2025 Conference",
+        role: "Participant",
+        image: "/SHPEConference2025.png",
+        desc: "Participated in technical workshops, professional panels, and networking events. Engaged with recruiters and engineers from top technology and finance companies, gaining perspective on emerging industry trends and best practices in career development. Strengthened connections within the Hispanic and STEM communities while continuing to grow professionally through mentorship and leadership opportunities.",
+        link: "https://www.shpe.org/events/national-convention"
+      },
     ].map((exp, idx) => (
       <div className="experience-card section-card" key={idx}>
         <img src={exp.image} alt={exp.title} />
