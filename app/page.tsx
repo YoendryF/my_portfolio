@@ -82,27 +82,33 @@ export default function Home() {
   <h3>Skills</h3>
   <div className="skills-grid">
     {[
+      //Languages
+      "Python",
+      "C",
+      "C++",
+      "Java",
       "JavaScript",
       "TypeScript",
-      "React.js",
-      "Node.js",
-      "MongoDB",
-      "Java",
-      "Arduino",
-      "C",
-      "Python",
       "Haskell",
-      "Aseprite",
-      "C++",
-      "Git & GitHub",
       "HTML",
       "CSS",
+      "Dart",
+      //Databases
+      "MongoDB",
+      "FireBase",
+      //Frameworks
       "Linux/Unix",
+      "React.js",
+      "Node.js",
+      "Flutter",
+      "Unity",
+      //Tools
+      "Git & GitHub",
       "Docker",
       "RabbitMQ",
-      "Unity",
       "Figma",
-      "Flutter",
+      "Arduino",
+      "Aseprite",
     ].map((skill, idx) => (
       <span key={idx} className="skill-chip">
         {skill}
