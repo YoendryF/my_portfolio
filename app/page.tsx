@@ -269,6 +269,11 @@ export default function Home() {
         desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
         link: "https://devpost.com/software/shadesmith"
       },
+      {
+        title: "StrongSight",
+        image: "/StrongSightLogo.png",
+        desc: "IN DEVELOPMENT: StrongSight is an intelligent fitness companion designed to enhance how users train by combining computer vision, real-time feedback, and AI-powered form analysis. Built with Flutter for cross-platform performance and TensorFlow Lite for on-device inference, StrongSight uses pose estimation models to detect and evaluate user movements during exercises such as squats, push-ups, and bicep curls. The app provides instant posture correction cues, rep tracking, and visual insights into performance, helping users improve consistency and reduce injury risk. Through a clean UI and smooth animation system, it delivers a gym-ready experience while showcasing responsive motion design and embedded Lottie-based feedback elements.",
+      },
     ].map((project, idx) => (
       <div className="project-card" key={idx} style={{ animationDelay: `${idx * 0.1}s` }}>
         <img src={project.image} alt={project.title} />
