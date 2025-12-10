@@ -1032,7 +1032,7 @@ footer {
 .img-contain {
   width: 100%;
   height: 150px;
-  object-fit: contain;
+  object-fit: contain !important;
   background-color: #1c2438;
   border-radius: 8px;
   padding: 8px;

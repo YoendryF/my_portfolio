@@ -78,7 +78,7 @@ export default function Home() {
       {
         title: "HealthCarpenter Primary Care Notification System",
         image: "/HealthCarpenterLogo.png",
-        fit: "cover",
+        fit: "contain",
         desc: "IN DEVELOPMENT: The HealthCarpenter Primary Care Notification System is a role-based communication platform designed to streamline patient outreach and modernize clinical workflow. Built with a FastAPI backend, PostgreSQL, and SQLAlchemy ORM, the system enables secure creation, management, and delivery of automated patient notifications—such as appointment reminders, follow-up alerts, and provider-specific updates. A React/Next.js frontend provides a clean and intuitive dashboard for administrators, providers, and receptionists, each with tailored access permissions through a robust RBAC model. The system supports HIPAA-aligned data handling, JWT-based authentication, and Dockerized deployment for reliable development and scaling. Once complete, it will serve as a foundational tool for improving care continuity, reducing no-show rates, and giving clinics a more efficient digital communication pipeline.",
       },
       {
@@ -119,7 +119,7 @@ export default function Home() {
       {
         title: "Gashapon Robot",
         image: "/Gashapon.png",
-        fit: "cover",
+        fit: "contain",
         desc: "An Arduino-based vending machine that dispenses random capsules, displays different facial expressions, and calls out for user engagement at peak interaction times.",
         link: "/projects/Gashapon"
       },
