@@ -1055,6 +1055,30 @@ footer {
     color: rgb(31, 115, 219);
     font-size: 0.95rem;
   }
+
+  .project-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.project-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.project-subtitle {
+  font-size: 0.85rem;
+  color: #7f9dcd;
+  margin-top: 4px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 4px;
+}
+
+
   .contact-links {
     display: flex;
     flex-direction: column;

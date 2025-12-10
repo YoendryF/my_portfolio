@@ -34,8 +34,10 @@ function ProjectCard({ project } : { project: Project }) {
 
 
       <div className="project-header" onClick={() => setOpen(!open)}>
-        <h4>{project.title}</h4>
-        <h2>{project.subtitle}</h2>
+        <div className="project-text">
+          <h4 className="project-title">{project.title}</h4>
+          <p className="project-subtitle">{project.subtitle}</p>
+        </div>
 
         {/* Dropdown Arrow */}
         <span className={`arrow ${open ? "open" : ""}`}>▼</span>
