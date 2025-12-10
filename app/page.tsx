@@ -116,7 +116,6 @@ export default function Home() {
       {/* Main content wrapper */}
       <main className="main-content">
         <section className="intro-card">
-          <img src="/laptopHeadshot.jpg" alt="Yoendry profile" className="ProfilePicture"/>
           <h1>Yoendry Ferro Santizo</h1>
           <h2>Software Engineer</h2>
           <p>

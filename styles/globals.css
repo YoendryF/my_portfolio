@@ -995,6 +995,8 @@ footer {
     display: flex;
     flex-direction: column;
     animation: fadeInUp 0.6s ease-out both;
+    gap: 0.5rem;
+    padding: 1rem;
   }
   
   .project-card:hover {
@@ -1008,7 +1010,10 @@ footer {
   .project-card img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
   }
   
   .project-card > div {
