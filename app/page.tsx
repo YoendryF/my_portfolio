@@ -9,6 +9,7 @@ type Project = {
   subtitle: string;
   image: string;
   desc: string;
+  tech: string;
   link?: string;
   image2?: string;
   fit?: "contain" | "cover";
@@ -59,7 +60,9 @@ function ProjectCard({ project } : { project: Project }) {
             }}
           />
         )}
-
+        <h6>Technologies Used</h6>
+        <p>{project.tech}</p>
+        <h6>About</h6>
         <p>{project.desc}</p>
 
         {project.link && (
@@ -84,6 +87,7 @@ export default function Home() {
         subtitle: "Primary Care Notification System",
         image: "/HealthCarpenterLogo.png",
         fit: "contain",
+        tech: "FastAPI, Uvicorn, PostgreSQL, SQLAlchemy ORM, Alembic, Pydantic, JWT Authentication, RBAC, Docker & Docker Compose, Next.js, React, Axios, HIPAA-aligned backend architecture",
         desc: "IN DEVELOPMENT: The HealthCarpenter Primary Care Notification System is a role-based communication platform designed to streamline patient outreach and modernize clinical workflow. Built with a FastAPI backend, PostgreSQL, and SQLAlchemy ORM, the system enables secure creation, management, and delivery of automated patient notifications—such as appointment reminders, follow-up alerts, and provider-specific updates. A React/Next.js frontend provides a clean and intuitive dashboard for administrators, providers, and receptionists, each with tailored access permissions through a robust RBAC model. The system supports HIPAA-aligned data handling, JWT-based authentication, and Dockerized deployment for reliable development and scaling. Once complete, it will serve as a foundational tool for improving care continuity, reducing no-show rates, and giving clinics a more efficient digital communication pipeline.",
       },
       {
@@ -91,6 +95,7 @@ export default function Home() {
         subtitle: "AI-Powered Fitness Form Coach",
         image: "/StrongSightLogo.png",
         fit: "contain",
+        tech: "Flutter, Dart, Python, MediaPipe, Firebase, LottieFiles, Procreate",
         desc: "IN DEVELOPMENT: StrongSight is an intelligent fitness companion designed to enhance how users train by combining computer vision, real-time feedback, and AI-powered form analysis. Built with Flutter for cross-platform performance and TensorFlow Lite for on-device inference, StrongSight uses pose estimation models to detect and evaluate user movements during exercises such as squats, push-ups, and bicep curls. The app provides instant posture correction cues, rep tracking, and visual insights into performance, helping users improve consistency and reduce injury risk. Through a clean UI and smooth animation system, it delivers a gym-ready experience while showcasing responsive motion design and embedded Lottie-based feedback elements.",
       },
       {
@@ -98,6 +103,7 @@ export default function Home() {
         subtitle: "AI-Powered Paint Mixing Recipe App",
         image: "/ShadeSmithLogo.png",
         fit: "contain",
+        tech: "Flutter, Dart, Python, Google Cloud(Vision, ADK, Gemini), Firebase",
         desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
         link: "https://devpost.com/software/shadesmith"
       },
@@ -106,6 +112,7 @@ export default function Home() {
         subtitle: "Photography Portfolio Website",
         image: "/ChristellePhoto.png",
         fit: "contain",
+        tech: "React, Next.js, GitHub Pages, JavaScript, HTML/CSS",
         desc: "A portfolio website for a photographer, featuring a responsive gallery.",
         link: "https://Christellephotography.com"
       },
@@ -115,6 +122,7 @@ export default function Home() {
         image: "/TitleScreen.png",
         image2: "/KOGAnimation.png",
         fit: "cover",
+        tech: "Unity, Aseprite",
         desc: "A fantasy-themed dungeon crawler built in Unity featuring procedurally generated dungeons, original character sprites and animations, and branching gameplay.",
         link: "/projects/KingdomOfGreed"
       },
@@ -123,6 +131,7 @@ export default function Home() {
         subtitle: "Local Infrastructure Reporting App",
         image: "/FixMyCityDash.png",
         fit: "cover",
+        tech: "MERN Stack(MongoDB, Express.js, React.js, Node.js), Google Maps API, Cloudinary API",
         desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
         link: "/FixMyCity"
       },
@@ -131,6 +140,7 @@ export default function Home() {
         subtitle: "Interactive Arduino-Based Vending Machine",
         image: "/Gashapon.png",
         fit: "contain",
+        tech: "Arduino, C++, Servo Motors, OLED Display, 3D Printing",
         desc: "An Arduino-based vending machine that dispenses random capsules, displays different facial expressions, and calls out for user engagement at peak interaction times.",
         link: "/projects/Gashapon"
       },
@@ -139,6 +149,7 @@ export default function Home() {
         subtitle: "Compound Interest Education Web App",
         image: "/FutureFundImage.png",
         fit: "cover",
+        tech: "HTML, CSS, JavaScript, ChatGPT API",
         desc: "An interactive website built at Florida’s largest hackathon that uses a chatbot and investment simulator to teach users the power of compound interest.",
         link: "/Hackathon/index.html"
       },
