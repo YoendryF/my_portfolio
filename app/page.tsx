@@ -2,9 +2,115 @@
 
 import Image from "next/image";
 import "../styles/globals.css";
+import { useState } from "react";
 
+type Project = {
+  title: string;
+  image: string;
+  desc: string;
+  link?: string;
+  image2?: string;
+};
+
+
+function ProjectCard({ project } : { project: Project }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="project-card dropdown-card">
+      <img src={project.image} alt={project.title} />
+
+      <div className="project-header" onClick={() => setOpen(!open)}>
+        <h4>{project.title}</h4>
+
+        {/* Dropdown Arrow */}
+        <span className={`arrow ${open ? "open" : ""}`}>▼</span>
+      </div>
+
+      {/* Hidden Panel */}
+      <div className={`dropdown-content ${open ? "show" : ""}`}>
+        {project.image2 && (
+          <div
+            className="sprite-anim"
+            style={{
+              width: "64px",
+              height: "64px",
+              backgroundImage: `url(${project.image2})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "0 0",
+              animation: "goblinWalk 0.8s steps(5) infinite",
+              margin: "1rem auto",
+            }}
+          />
+        )}
+
+        <p>{project.desc}</p>
+
+        {project.link && (
+          <a
+            href={project.link}
+            className="btn green"
+            style={{ display: "inline-block", marginTop: "1rem" }}
+          >
+            Learn More
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
+  //Projects List
+  const projects = [
+      {
+        title: "HealthCarpenter Primary Care Notification System",
+        image: "/HealthCarpenterLogo.png",
+        desc: "IN DEVELOPMENT: The HealthCarpenter Primary Care Notification System is a role-based communication platform designed to streamline patient outreach and modernize clinical workflow. Built with a FastAPI backend, PostgreSQL, and SQLAlchemy ORM, the system enables secure creation, management, and delivery of automated patient notifications—such as appointment reminders, follow-up alerts, and provider-specific updates. A React/Next.js frontend provides a clean and intuitive dashboard for administrators, providers, and receptionists, each with tailored access permissions through a robust RBAC model. The system supports HIPAA-aligned data handling, JWT-based authentication, and Dockerized deployment for reliable development and scaling. Once complete, it will serve as a foundational tool for improving care continuity, reducing no-show rates, and giving clinics a more efficient digital communication pipeline.",
+      },
+      {
+        title: "StrongSight",
+        image: "/StrongSightLogo.png",
+        desc: "IN DEVELOPMENT: StrongSight is an intelligent fitness companion designed to enhance how users train by combining computer vision, real-time feedback, and AI-powered form analysis. Built with Flutter for cross-platform performance and TensorFlow Lite for on-device inference, StrongSight uses pose estimation models to detect and evaluate user movements during exercises such as squats, push-ups, and bicep curls. The app provides instant posture correction cues, rep tracking, and visual insights into performance, helping users improve consistency and reduce injury risk. Through a clean UI and smooth animation system, it delivers a gym-ready experience while showcasing responsive motion design and embedded Lottie-based feedback elements.",
+      },
+      {
+        title: "ShadeSmith",
+        image: "/ShadeSmithLogo.png",
+        desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
+        link: "https://devpost.com/software/shadesmith"
+      },
+      {
+        title: "ChristellePhotography",
+        image: "/ChristellePhotography.PNG",
+        desc: "A portfolio website for a photographer, featuring a responsive gallery.",
+        link: "https://Christellephotography.com"
+      },
+      {
+        title: "Kingdom of Greed",
+        image: "/TitleScreen.png",
+        image2: "/KOGAnimation.png",
+        desc: "A fantasy-themed dungeon crawler built in Unity featuring procedurally generated dungeons, original character sprites and animations, and branching gameplay.",
+        link: "/projects/KingdomOfGreed"
+      },
+      {
+        title: "Fix My City",
+        image: "/FixMyCityDash.png",
+        desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
+        link: "/FixMyCity"
+      },
+      {
+        title: "Gashapon Robot",
+        image: "/Gashapon.png",
+        desc: "An Arduino-based vending machine that dispenses random capsules, displays different facial expressions, and calls out for user engagement at peak interaction times.",
+        link: "/projects/Gashapon"
+      },
+      {
+        title: "Future Fund",
+        image: "/FutureFundImage.png",
+        desc: "An interactive website built at Florida’s largest hackathon that uses a chatbot and investment simulator to teach users the power of compound interest.",
+        link: "/Hackathon/index.html"
+      },
+    ];
   return (
     <div id="top" className="portfolio-layout">
       {/* Main content wrapper */}
@@ -93,22 +199,37 @@ export default function Home() {
       "HTML",
       "CSS",
       "Dart",
+
       //Databases
       "MongoDB",
       "FireBase",
+      "PostgreSQL",
+
+      //Backend Technologies
+      "RESTful API",
+      "SQLAlchemy ORM",
+      "Pydantic",
+
       //Frameworks
       "Linux/Unix",
       "React.js",
+      "Next.js",
       "Node.js",
       "Flutter",
       "Unity",
-      //Tools
+    
+
+      //Tools and DevOps
       "Git & GitHub",
       "Docker",
+      "Docker Compose",
+      "Axios",
       "RabbitMQ",
       "Figma",
       "Arduino",
       "Aseprite",
+      "JWT Authentication",
+      "Role-Based Access Control(RBAC)",
     ].map((skill, idx) => (
       <span key={idx} className="skill-chip">
         {skill}
@@ -121,6 +242,20 @@ export default function Home() {
   <h3>Experiences & Extracurriculars</h3>
   <div className="experience-grid">
     {[
+      {
+        title: "SHPE 2025 Conference",
+        role: "Participant",
+        image: "/SHPEConference2025.png",
+        desc: "Participated in technical workshops, professional panels, and networking events. Engaged with recruiters and engineers from top technology and finance companies, gaining perspective on emerging industry trends and best practices in career development. Strengthened connections within the Hispanic and STEM communities while continuing to grow professionally through mentorship and leadership opportunities.",
+        link: "https://www.shpe.org/events/national-convention"
+      },
+      {
+        title: "Shellhacks 2025",
+        role: "Competitor",
+        image: "/ShellHacksImage.png",
+        desc: "Developed ShadeSmith, an AI-powered color recipe app, over the course of 36 hours with a team of fellow students. Leveraged Flutter, Dart, Python, Firebase, and Google Cloud to create a functional prototype that scans real-world colors and generates paint mixing recipes from a user’s inventory. Gained experience in cloud-based AI services, backend integration, and fast-paced collaboration under hackathon conditions.",
+        link: "https://shellhacks.net/"
+      },
       {
         title: "SHPE Pro Dev Committee",
         role: "Active Member",
@@ -159,20 +294,7 @@ export default function Home() {
         desc: "Collaborated with my SHPE mentees to develop Future Fund, a personal finance web app. Attended presentations and tech talks from leading companies on industry tools, technologies, and success strategies. The weekend-long hackathon strengthened my skills in time management, leadership, and cross-functional teamwork.",
         link: "https://shellhacks.net/"
       },
-      {
-        title: "Shellhacks 2025",
-        role: "Competitor",
-        image: "/ShellHacksImage.png",
-        desc: "Developed ShadeSmith, an AI-powered color recipe app, over the course of 36 hours with a team of fellow students. Leveraged Flutter, Dart, Python, Firebase, and Google Cloud to create a functional prototype that scans real-world colors and generates paint mixing recipes from a user’s inventory. Gained experience in cloud-based AI services, backend integration, and fast-paced collaboration under hackathon conditions.",
-        link: "https://shellhacks.net/"
-      },
-      {
-        title: "SHPE 2025 Conference",
-        role: "Participant",
-        image: "/SHPEConference2025.png",
-        desc: "Participated in technical workshops, professional panels, and networking events. Engaged with recruiters and engineers from top technology and finance companies, gaining perspective on emerging industry trends and best practices in career development. Strengthened connections within the Hispanic and STEM communities while continuing to grow professionally through mentorship and leadership opportunities.",
-        link: "https://www.shpe.org/events/national-convention"
-      },
+    
     ].map((exp, idx) => (
       <div className="experience-card section-card" key={idx}>
         <img src={exp.image} alt={exp.title} />
@@ -191,6 +313,7 @@ export default function Home() {
     
   </div>
 </section>
+
 
 
 <section id="contact" className="contact-card section-card">
@@ -240,92 +363,18 @@ export default function Home() {
 
 
 
-
-        <section id="projects" className="projects-section">
+<section id="projects" className="projects-section">
   <h3>Projects</h3>
   <div className="projects-grid">
-    {[
-      {
-        title: "Future Fund",
-        image: "/FutureFundImage.png",
-        desc: "An interactive website built at Florida’s largest hackathon that uses a chatbot and investment simulator to teach users the power of compound interest.",
-        link: "/Hackathon/index.html"
-      },
-      {
-        title: "Fix My City",
-        image: "/FixMyCityDash.png",
-        desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
-        link: "/FixMyCity"
-      },
-      {
-        title: "Gashapon Robot",
-        image: "/Gashapon.png",
-        desc: "An Arduino-based vending machine that dispenses random capsules, displays different facial expressions, and calls out for user engagement at peak interaction times.",
-        link: "/projects/Gashapon"
-      },
-      {
-        title: "Kingdom of Greed",
-        image: "/TitleScreen.png",
-        image2: "/KOGAnimation.png",
-        desc: "A fantasy-themed dungeon crawler built in Unity featuring procedurally generated dungeons, original character sprites and animations, and branching gameplay.",
-        link: "/projects/KingdomOfGreed"
-      },
-      {
-        title: "ChristellePhotography",
-        image: "/ChristellePhotography.PNG",
-        desc: "A portfolio website for a photographer, featuring a responsive gallery.",
-        link: "https://Christellephotography.com"
-      },
-      {
-        title: "ShadeSmith",
-        image: "/ShadeSmithLogo.png",
-        desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
-        link: "https://devpost.com/software/shadesmith"
-      },
-      {
-        title: "StrongSight",
-        image: "/StrongSightLogo.png",
-        desc: "IN DEVELOPMENT: StrongSight is an intelligent fitness companion designed to enhance how users train by combining computer vision, real-time feedback, and AI-powered form analysis. Built with Flutter for cross-platform performance and TensorFlow Lite for on-device inference, StrongSight uses pose estimation models to detect and evaluate user movements during exercises such as squats, push-ups, and bicep curls. The app provides instant posture correction cues, rep tracking, and visual insights into performance, helping users improve consistency and reduce injury risk. Through a clean UI and smooth animation system, it delivers a gym-ready experience while showcasing responsive motion design and embedded Lottie-based feedback elements.",
-      },
-    ].map((project, idx) => (
-      <div className="project-card" key={idx} style={{ animationDelay: `${idx * 0.1}s` }}>
-        <img src={project.image} alt={project.title} />
-        <div>
-          <h4>{project.title}</h4>
-          {project.image2 && (
-            <div
-              className="sprite-anim"
-              style={{
-                width: "64px",
-                height: "64px",
-                backgroundImage: `url(${project.image2})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "0 0",
-                animation: "goblinWalk 0.8s steps(5) infinite",
-                margin: "1rem auto",
-              }}
-            />
-          )}
-           <p>{project.desc}</p>
-
-
-      <div style={{ marginTop: "auto" }}>
-            <a
-              href={project.link}
-              className="btn green"
-              style={{ display: "inline-block", marginTop: "1rem" }}
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-
-
+    {projects.map((project, idx) => (
+      <ProjectCard key={idx} project={project} />
     ))}
   </div>
 </section>
 
+
+
+      
 
 
 <section id="bio" className="bio-section">

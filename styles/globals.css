@@ -543,6 +543,37 @@ footer {
     justify-content: center;
   }
   
+  /* Makes the whole card clickable */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Dropdown arrow */
+.arrow {
+  transition: transform 0.3s ease;
+}
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown animation wrapper */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+/* Fully expanded */
+.dropdown-content.show {
+  max-height: 800px; /* enough for any description */
+  opacity: 1;
+  margin-top: 1rem;
+}
+
   
   /* Sidebar */
   .sidebar {
