@@ -967,6 +967,7 @@ footer {
   
   .projects-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     width: 100%;
   }
@@ -1016,6 +1017,22 @@ footer {
     border-radius: 8px;
   }
   
+  .img-cover {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-contain {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background-color: #1c2438;
+  border-radius: 8px;
+  padding: 8px;
+}
+
   .project-card > div {
     padding: 1rem;
     display: flex;
