@@ -60,10 +60,16 @@ function ProjectCard({ project } : { project: Project }) {
             }}
           />
         )}
-        <h6>Technologies Used</h6>
-        <p>{project.tech}</p>
-        <h6>About</h6>
-        <p>{project.desc}</p>
+        <div className="project-section">
+          <h4 className="section-title">Technologies Used</h4>
+          <p className="section-tech">{project.tech}</p>
+        </div>
+
+        <div className="project-section">
+          <h4 className="section-title">About</h4>
+          <p className="section-desc">{project.desc}</p>
+        </div>
+
 
         {project.link && (
           <a
