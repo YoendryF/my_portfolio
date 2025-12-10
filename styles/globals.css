@@ -1024,6 +1024,11 @@ footer {
   border-radius: 8px;
 }
 
+.img-zoomout {
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
 .img-contain {
   width: 100%;
   height: 150px;

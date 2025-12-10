@@ -20,10 +20,17 @@ function ProjectCard({ project } : { project: Project }) {
   return (
     <div className="project-card dropdown-card">
       <img
-        src={project.image}
-        alt={project.title}
-        className={project.fit === "contain" ? "img-contain" : "img-cover"}
-      />
+      src={project.image}
+      alt={project.title}
+      className={
+        project.title === "HealthCarpenter Primary Care Notification System" || project.title === "ShadeSmith" || project.title === "Gashapon Robot"
+          ? "img-contain img-zoomout"
+          : project.fit === "contain"
+          ? "img-contain"
+          : "img-cover"
+      }
+    />
+
 
       <div className="project-header" onClick={() => setOpen(!open)}>
         <h4>{project.title}</h4>
