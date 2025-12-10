@@ -6,6 +6,7 @@ import { useState } from "react";
 
 type Project = {
   title: string;
+  subtitle: string;
   image: string;
   desc: string;
   link?: string;
@@ -34,6 +35,7 @@ function ProjectCard({ project } : { project: Project }) {
 
       <div className="project-header" onClick={() => setOpen(!open)}>
         <h4>{project.title}</h4>
+        <h2>{project.subtitle}</h2>
 
         {/* Dropdown Arrow */}
         <span className={`arrow ${open ? "open" : ""}`}>▼</span>
@@ -76,19 +78,22 @@ export default function Home() {
   //Projects List
   const projects: Project[] = [
       {
-        title: "HealthCarpenter Primary Care Notification System",
+        title: "HealthCarpenter",
+        subtitle: "Primary Care Notification System",
         image: "/HealthCarpenterLogo.png",
         fit: "contain",
         desc: "IN DEVELOPMENT: The HealthCarpenter Primary Care Notification System is a role-based communication platform designed to streamline patient outreach and modernize clinical workflow. Built with a FastAPI backend, PostgreSQL, and SQLAlchemy ORM, the system enables secure creation, management, and delivery of automated patient notifications—such as appointment reminders, follow-up alerts, and provider-specific updates. A React/Next.js frontend provides a clean and intuitive dashboard for administrators, providers, and receptionists, each with tailored access permissions through a robust RBAC model. The system supports HIPAA-aligned data handling, JWT-based authentication, and Dockerized deployment for reliable development and scaling. Once complete, it will serve as a foundational tool for improving care continuity, reducing no-show rates, and giving clinics a more efficient digital communication pipeline.",
       },
       {
         title: "StrongSight",
+        subtitle: "AI-Powered Fitness Form Coach",
         image: "/StrongSightLogo.png",
         fit: "contain",
         desc: "IN DEVELOPMENT: StrongSight is an intelligent fitness companion designed to enhance how users train by combining computer vision, real-time feedback, and AI-powered form analysis. Built with Flutter for cross-platform performance and TensorFlow Lite for on-device inference, StrongSight uses pose estimation models to detect and evaluate user movements during exercises such as squats, push-ups, and bicep curls. The app provides instant posture correction cues, rep tracking, and visual insights into performance, helping users improve consistency and reduce injury risk. Through a clean UI and smooth animation system, it delivers a gym-ready experience while showcasing responsive motion design and embedded Lottie-based feedback elements.",
       },
       {
         title: "ShadeSmith",
+        subtitle: "AI-Powered Paint Mixing Recipe App",
         image: "/ShadeSmithLogo.png",
         fit: "contain",
         desc: "An AI-powered mobile app that scans real-world colors and generates paint mixing recipes from a user’s inventory, built with Flutter, Python, and Google Cloud in just 36 hours at ShellHacks",
@@ -96,6 +101,7 @@ export default function Home() {
       },
       {
         title: "ChristellePhotography",
+        subtitle: "Photography Portfolio Website",
         image: "/ChristellePhoto.png",
         fit: "contain",
         desc: "A portfolio website for a photographer, featuring a responsive gallery.",
@@ -103,6 +109,7 @@ export default function Home() {
       },
       {
         title: "Kingdom of Greed",
+        subtitle: "2D Unity Dungeon Crawler Game",
         image: "/TitleScreen.png",
         image2: "/KOGAnimation.png",
         fit: "cover",
@@ -111,6 +118,7 @@ export default function Home() {
       },
       {
         title: "Fix My City",
+        subtitle: "Local Infrastructure Reporting App",
         image: "/FixMyCityDash.png",
         fit: "cover",
         desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
@@ -118,6 +126,7 @@ export default function Home() {
       },
       {
         title: "Gashapon Robot",
+        subtitle: "Interactive Arduino-Based Vending Machine",
         image: "/Gashapon.png",
         fit: "contain",
         desc: "An Arduino-based vending machine that dispenses random capsules, displays different facial expressions, and calls out for user engagement at peak interaction times.",
@@ -125,6 +134,7 @@ export default function Home() {
       },
       {
         title: "Future Fund",
+        subtitle: "Compound Interest Education Web App",
         image: "/FutureFundImage.png",
         fit: "cover",
         desc: "An interactive website built at Florida’s largest hackathon that uses a chatbot and investment simulator to teach users the power of compound interest.",
