@@ -1467,7 +1467,8 @@ footer {
 
   .sidebar {
     position: fixed;
-    left: -100%;
+    left: 0;
+    transform: translateX(-100%);
     top: 0;
     height: 100vh;
     width: 80%;
@@ -1478,7 +1479,7 @@ footer {
   }
 
   .sidebar.open {
-    left: 0;
+    transform: translateX(0);
   }
 
   .sidebar-toggle {
