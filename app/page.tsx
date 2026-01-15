@@ -167,8 +167,7 @@ export default function Home() {
           <h1>Yoendry Ferro Santizo</h1>
           <h2>Software Engineer</h2>
           <p>
-          I specialize in building full-stack web apps with clean code, performance,
-            and great UX. Check out my <a href="#projects">projects</a> or view my{" "}
+          Hi! I'm Yoendry, a computer scientist passionate about building user-focused software. Check out my <a href="#projects">projects</a> or view my{" "}
             <a href="#resume">resume</a>.
           </p>
           <div className="actions">
