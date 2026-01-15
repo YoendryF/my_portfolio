@@ -139,7 +139,6 @@ export default function Home() {
         fit: "cover",
         tech: "MERN Stack(MongoDB, Express.js, React.js, Node.js), Google Maps API, Cloudinary API",
         desc: "A full-stack MERN app that lets users report and search for local infrastructure issues with auto generated maps and image upload functionality.",
-        link: "/FixMyCity"
       },
       {
         title: "Gashapon Robot",
