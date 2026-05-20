@@ -1,6 +1,6 @@
 // app/strongsight/page.jsx
 
-import "./strongsightPage.module.css";
+import "./StrongSightPage.module.css";
 import Image from "next/image";
 
 export default function StrongSightPage() {
