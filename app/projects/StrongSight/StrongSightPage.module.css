@@ -1,19 +1,6 @@
 /* app/strongsight/StrongSightPage.module.css */
 
 /* =========================
-   GLOBAL RESET
-========================= */
-
-:global(html),
-:global(body) {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  background: #0d0d0d;
-}
-
-/* =========================
    COLOR PALETTE
 ========================= */
 /*
