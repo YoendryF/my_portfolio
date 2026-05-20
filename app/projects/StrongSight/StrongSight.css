@@ -18,6 +18,10 @@ Onyx           : #353535
   width: 100%;
   min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background:
     radial-gradient(circle at top left, rgba(27, 67, 50, 0.25), transparent 35%),
     radial-gradient(circle at bottom right, rgba(248, 243, 231, 0.05), transparent 30%),
@@ -25,8 +29,15 @@ Onyx           : #353535
 
   color: #f8f3e7;
 
-  padding: 120px 8%;
+  padding: 120px 5vw;
+
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1600px;
 }
 
 /* =========================

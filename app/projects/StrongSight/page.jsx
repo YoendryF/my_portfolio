@@ -6,17 +6,18 @@ import Image from "next/image";
 export default function StrongSightPage() {
   return (
     <main className="strongsight-page">
+        <div className="page-content">
       {/* HERO */}
       <section className="hero-section">
         <h1 className="title">StrongSight</h1>
-        <h2 className="subtitle">UCF Senior Design Projects</h2>
+        <h2 className="subtitle">UCF Senior Design Project</h2>
       </section>
 
       {/* PROJECT DESCRIPTION */}
       <section className="description-section">
         <div className="logo-wrapper">
           <Image
-            src="/images/strongsight-logo.png"
+            src="/images/StrongSightLogo.png"
             alt="StrongSight Logo"
             width={180}
             height={180}
@@ -107,6 +108,7 @@ export default function StrongSightPage() {
           </a>
         </div>
       </section>
+        </div>
     </main>
   );
 }
