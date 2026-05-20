@@ -9,7 +9,7 @@ export default function StrongSightPage() {
       {/* HERO */}
       <section className="hero-section">
         <h1 className="title">StrongSight</h1>
-        <h2 className="subtitle">UCF Senior Design Project</h2>
+        <h2 className="subtitle">UCF Senior Design Projects</h2>
       </section>
 
       {/* PROJECT DESCRIPTION */}
